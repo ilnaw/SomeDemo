@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+
+
+def pods
+   pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+   pod 'Masonry'
+   pod 'YYAsyncLayer'
+   pod 'FDFullscreenPopGesture'
+   pod 'MJRefresh', '~> 3.1.15.7'
+   pod 'ReactiveObjC'
+   pod "Texture"
+   pod 'SDWebImage', '~> 5.0.0'
+end
+
+target 'TestOCProject' do
+    pods
+end
