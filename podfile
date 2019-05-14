@@ -10,6 +10,7 @@ def pods
    pod 'ReactiveObjC'
    pod "Texture"
    pod 'SDWebImage', '~> 5.0.0'
+   pod 'UICountingLabel'
 end
 
 target 'TestOCProject' do

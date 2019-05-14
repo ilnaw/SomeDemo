@@ -261,13 +261,13 @@
 //    [self presentImagePicker:^(UIImage * image) {
 //        NSLog(@"%@",image);
 //    }];
-//    UIImage *snapImage = [self snapScrollViewContent];
-//    SnapViewController *vc = [SnapViewController new];
-//    vc.snapImg = snapImage;
-//
-//    [self.navigationController pushViewController:vc animated:YES];
+
     YLPopoverAction *shareAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"分享" handler:^(YLPopoverAction *action) {
+        UIImage *snapImage = [self snapScrollViewContent];
+        SnapViewController *vc = [SnapViewController new];
+        vc.snapImg = snapImage;
         
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     YLPopoverAction *deleteAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"删除" handler:^(YLPopoverAction *action) {
         

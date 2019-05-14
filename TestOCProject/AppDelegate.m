@@ -37,6 +37,8 @@
 #import "YLDrawXibViewController.h"
 #import "YLLayerViewController.h"
 #import "FakeScrollViewController.h"
+#import "ButtonTypeViewController.h"
+#import "YLCoinViewController.h"
 
 @interface AppDelegate ()
 
@@ -70,7 +72,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    ViewController *rac = [[ViewController alloc]init];
+    YLCoinViewController *rac = [[YLCoinViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     

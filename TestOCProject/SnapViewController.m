@@ -7,10 +7,10 @@
 //
 
 #import "SnapViewController.h"
+#import "UIButton+YLButtonLayoutType.h"
 
 @interface ShareCell : UICollectionViewCell
-@property (nonatomic, strong)UIImageView *icon;
-@property (nonatomic, strong)UILabel *titleLabel;
+@property (nonatomic, strong)UIButton  *iconButton;
 @end
 
 @implementation ShareCell
@@ -18,28 +18,20 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIImageView *icon = [UIImageView new];
-        icon.backgroundColor = [UIColor redColor];
-        icon.layer.cornerRadius = 25;
-        self.icon = icon;
+        self.iconButton = ({
+            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+            [button setTitle:@"QQ" forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"jiankys14_icon"] forState:UIControlStateNormal];
+            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            
+            button;
+        });
         
-        UILabel *label = [UILabel new];
-        label.textColor = [UIColor whiteColor];
-        label.text = @"QQ";
-        self.titleLabel = label;
-        
-        [self addSubview:self.icon];
-        [self addSubview:self.titleLabel];
-        
-        [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self);
-            make.centerY.equalTo(self).multipliedBy(0.9);
-            make.size.mas_equalTo(CGSizeMake(50, 50));
+        [self addSubview:self.iconButton];
+        [self.iconButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsMake(8, 15, 8, 15));
         }];
-        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.icon.mas_bottom).offset(4);
-            make.centerX.equalTo(self);
-        }];
+        [self.iconButton yl_setButtonLayoutType:YLButtonLayoutTypeImageTop];
     }
     return self;
 }

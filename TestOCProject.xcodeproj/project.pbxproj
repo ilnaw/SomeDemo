@@ -50,6 +50,8 @@
 		773F0D8B22642CBA00815D58 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D8A22642CBA00815D58 /* DrawView.m */; };
 		773F0D8E2264557700815D58 /* YLCustomDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D8D2264557700815D58 /* YLCustomDrawView.m */; };
 		773F0D912264764600815D58 /* YLCustomBottomLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D902264764600815D58 /* YLCustomBottomLineView.m */; };
+		774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */; };
+		774EE3B1228ABA4B00ABFA7F /* YLCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */; };
 		775F5403226D8B5F00CFEE8A /* NSArray+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5401226D8B5E00CFEE8A /* NSArray+Blocks.m */; };
 		775F5406226D8B6700CFEE8A /* NSDictionary+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5405226D8B6600CFEE8A /* NSDictionary+Blocks.m */; };
 		775F540C226D964B00CFEE8A /* CopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F540B226D964B00CFEE8A /* CopyModel.m */; };
@@ -62,6 +64,8 @@
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
+		77BFB9DF228A5E6300B48949 /* UIButton+YLButtonLayoutType.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */; };
+		77BFB9E2228A61E900B48949 /* ButtonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9E1228A61E900B48949 /* ButtonTypeViewController.m */; };
 		77C6BC8322757919007AE802 /* SecondMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C6BC8222757919007AE802 /* SecondMasonryViewController.m */; };
 		77C6BC87227596F7007AE802 /* EatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C6BC86227596F7007AE802 /* EatViewController.m */; };
 		77C6BC8A2275975A007AE802 /* ChinaEatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C6BC892275975A007AE802 /* ChinaEatViewController.m */; };
@@ -192,6 +196,10 @@
 		773F0D8D2264557700815D58 /* YLCustomDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCustomDrawView.m; sourceTree = "<group>"; };
 		773F0D8F2264764600815D58 /* YLCustomBottomLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCustomBottomLineView.h; sourceTree = "<group>"; };
 		773F0D902264764600815D58 /* YLCustomBottomLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCustomBottomLineView.m; sourceTree = "<group>"; };
+		774EE3AC228ABA3200ABFA7F /* YLCoinProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCoinProgressView.h; sourceTree = "<group>"; };
+		774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCoinProgressView.m; sourceTree = "<group>"; };
+		774EE3AF228ABA4B00ABFA7F /* YLCoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCoinViewController.h; sourceTree = "<group>"; };
+		774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCoinViewController.m; sourceTree = "<group>"; };
 		775F5401226D8B5E00CFEE8A /* NSArray+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Blocks.m"; sourceTree = "<group>"; };
 		775F5402226D8B5F00CFEE8A /* NSArray+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Blocks.h"; sourceTree = "<group>"; };
 		775F5404226D8B6600CFEE8A /* NSDictionary+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Blocks.h"; sourceTree = "<group>"; };
@@ -216,6 +224,10 @@
 		77BFB9D7228A592900B48949 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
 		77BFB9D8228A592900B48949 /* PopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCell.h; sourceTree = "<group>"; };
 		77BFB9D9228A592900B48949 /* PopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewCell.m; sourceTree = "<group>"; };
+		77BFB9DD228A5E6300B48949 /* UIButton+YLButtonLayoutType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YLButtonLayoutType.h"; sourceTree = "<group>"; };
+		77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YLButtonLayoutType.m"; sourceTree = "<group>"; };
+		77BFB9E0228A61E900B48949 /* ButtonTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTypeViewController.h; sourceTree = "<group>"; };
+		77BFB9E1228A61E900B48949 /* ButtonTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTypeViewController.m; sourceTree = "<group>"; };
 		77C6BC8122757919007AE802 /* SecondMasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondMasonryViewController.h; sourceTree = "<group>"; };
 		77C6BC8222757919007AE802 /* SecondMasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondMasonryViewController.m; sourceTree = "<group>"; };
 		77C6BC85227596F7007AE802 /* EatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatViewController.h; sourceTree = "<group>"; };
@@ -388,6 +400,8 @@
 				773F0D902264764600815D58 /* YLCustomBottomLineView.m */,
 				7737699922816067008DE8C1 /* YLWeekDestinyView.h */,
 				7737699A22816067008DE8C1 /* YLWeekDestinyView.m */,
+				774EE3AC228ABA3200ABFA7F /* YLCoinProgressView.h */,
+				774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */,
 				7737699C228162B6008DE8C1 /* YLCircelCountView.h */,
 				7737699D228162B6008DE8C1 /* YLCircelCountView.m */,
 				77C9D88C2283D26F0022991E /* YLPlanBoradView.h */,
@@ -396,6 +410,8 @@
 				27A344EE2254A24600C0EFC7 /* RACViewModel.m */,
 				775F540A226D964B00CFEE8A /* CopyModel.h */,
 				775F540B226D964B00CFEE8A /* CopyModel.m */,
+				77BFB9DD228A5E6300B48949 /* UIButton+YLButtonLayoutType.h */,
+				77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */,
 				77BFB9CE228A565500B48949 /* YLPopoverAction.h */,
 				77BFB9D0228A565500B48949 /* YLPopoverAction.m */,
 				77BFB9CD228A565500B48949 /* YLPopoverController.h */,
@@ -419,6 +435,8 @@
 				77C6BC8222757919007AE802 /* SecondMasonryViewController.m */,
 				7713F507228907C80009797D /* SnapViewController.h */,
 				7713F508228907C80009797D /* SnapViewController.m */,
+				774EE3AF228ABA4B00ABFA7F /* YLCoinViewController.h */,
+				774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */,
 				77C9D87E2282A80F0022991E /* YLDrawDestinyViewController.h */,
 				77C9D87F2282A80F0022991E /* YLDrawDestinyViewController.m */,
 				77C9D8842283B8840022991E /* YLDrawXibViewController.h */,
@@ -432,6 +450,8 @@
 				77C9D87C228272790022991E /* ScrollOffsetViewController.m */,
 				77C9D88F2284238E0022991E /* FakeScrollViewController.h */,
 				77C9D8902284238E0022991E /* FakeScrollViewController.m */,
+				77BFB9E0228A61E900B48949 /* ButtonTypeViewController.h */,
+				77BFB9E1228A61E900B48949 /* ButtonTypeViewController.m */,
 				7715DFA422811E3A000D58AF /* EmptyView.h */,
 				7715DFA522811E3B000D58AF /* EmptyView.m */,
 				7737699322814F38008DE8C1 /* AttributeStrView.h */,
@@ -723,6 +743,7 @@
 			files = (
 				7713F509228907C90009797D /* SnapViewController.m in Sources */,
 				775F540C226D964B00CFEE8A /* CopyModel.m in Sources */,
+				77BFB9DF228A5E6300B48949 /* UIButton+YLButtonLayoutType.m in Sources */,
 				A5702825225F004E00758F77 /* YLDateManager.m in Sources */,
 				7737699B22816067008DE8C1 /* YLWeekDestinyView.m in Sources */,
 				7715DFA3228026C1000D58AF /* YLAdCountHelper.m in Sources */,
@@ -739,6 +760,7 @@
 				7715DF94227FE0B3000D58AF /* UIView+WXFrame.m in Sources */,
 				2715F3042248B84200164D88 /* PageViewController.m in Sources */,
 				2715F3102248C5AC00164D88 /* MainViewController.m in Sources */,
+				774EE3B1228ABA4B00ABFA7F /* YLCoinViewController.m in Sources */,
 				271883262249C59000046D86 /* WLTransitioning.m in Sources */,
 				7715DF9D22800FB4000D58AF /* AlertWindowVC.m in Sources */,
 				7737699E228162B6008DE8C1 /* YLCircelCountView.m in Sources */,
@@ -773,6 +795,7 @@
 				27212E4A223F6E2100CA6E4C /* UITableViewCell+reuse.m in Sources */,
 				27D7A6792247A3BC009F69CF /* NextViewController.m in Sources */,
 				773F0D8E2264557700815D58 /* YLCustomDrawView.m in Sources */,
+				774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */,
 				77C6BC8322757919007AE802 /* SecondMasonryViewController.m in Sources */,
 				775F5416226D9C0800CFEE8A /* UIView+ReuseIdentifier.m in Sources */,
 				271D3D7B22559B6400C67241 /* AsyncViewController.m in Sources */,
@@ -782,6 +805,7 @@
 				775F541C226DA38800CFEE8A /* UIViewController+SafeArea.m in Sources */,
 				2715F31622490C1600164D88 /* NormalRefreshHeader.m in Sources */,
 				775F5406226D8B6700CFEE8A /* NSDictionary+Blocks.m in Sources */,
+				77BFB9E2228A61E900B48949 /* ButtonTypeViewController.m in Sources */,
 				77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */,
 				A5F7FCE0225C3D0B00D763F7 /* YLNotificationType.m in Sources */,
 				2715F30A2248B88900164D88 /* PGTwoViewController.m in Sources */,
