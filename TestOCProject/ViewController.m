@@ -13,6 +13,8 @@
 #import "Masonry.h"
 #import "UIViewController+ImagePicker.h"
 #import <YYAsyncLayer/YYAsyncLayer.h>
+#import "SnapViewController.h"
+#import "YLPopoverController.h"
 
 @interface AsyncView: UIView
 @property (strong, nonatomic)UILabel  *nameLabel;
@@ -176,7 +178,7 @@
 //    [self.view addSubview:self.tableView];
 //    self.tableViewHeight = 200;
     [self.view addSubview:self.scrollView];
-    
+    self.scrollView.backgroundColor = [UIColor whiteColor];
     UIView *container = [[UIView alloc]init];
     [self.scrollView addSubview:container];
     
@@ -256,9 +258,52 @@
 }
 
 - (void)shoot:(UIButton *)sender{
-    [self presentImagePicker:^(UIImage * image) {
-        NSLog(@"%@",image);
+//    [self presentImagePicker:^(UIImage * image) {
+//        NSLog(@"%@",image);
+//    }];
+//    UIImage *snapImage = [self snapScrollViewContent];
+//    SnapViewController *vc = [SnapViewController new];
+//    vc.snapImg = snapImage;
+//
+//    [self.navigationController pushViewController:vc animated:YES];
+    YLPopoverAction *shareAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"分享" handler:^(YLPopoverAction *action) {
+        
     }];
+    YLPopoverAction *deleteAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"删除" handler:^(YLPopoverAction *action) {
+        
+    }];
+    YLPopoverController *controller = [YLPopoverController popoverControllerWithPreferredStyle:YLPopoverControllerStyleDark];
+    [controller addAction:shareAction];
+    [controller addAction:deleteAction];
+    [controller showToView:sender];
+}
+
+- (UIImage *)snapScrollViewContent
+{
+    UIGraphicsBeginImageContextWithOptions(self.scrollView.contentSize, self.scrollView.opaque, [UIScreen mainScreen].scale);
+    
+    CGRect originFrame = self.scrollView.frame;
+    CGRect currentFrame = CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.contentSize.height);
+    
+    self.scrollView.frame = currentFrame;
+    self.scrollView.contentOffset = CGPointZero;
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.scrollView.layer renderInContext:context];
+
+//    [self.scrollView drawViewHierarchyInRect:currentFrame afterScreenUpdates:YES];
+    
+    NSString *str = @"水印";
+    [str drawAtPoint:CGPointMake(10, currentFrame.size.height - 50) withAttributes:@{
+                                                                                     NSFontAttributeName : [UIFont systemFontOfSize:14],
+                                                                                     NSForegroundColorAttributeName : [UIColor redColor]
+                                                                                     }];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.scrollView.frame = originFrame;
+    
+    return image;
 }
 
 - (void)viewDidLayoutSubviews

@@ -70,7 +70,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    FakeScrollViewController *rac = [[FakeScrollViewController alloc]init];
+    ViewController *rac = [[ViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     
