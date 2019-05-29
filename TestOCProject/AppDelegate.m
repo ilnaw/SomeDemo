@@ -74,7 +74,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    ScrollOffsetViewController *rac = [[ScrollOffsetViewController alloc]init];
+    YLBViewController *rac = [[YLBViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     
