@@ -9,6 +9,7 @@
 #import "SecondMasonryViewController.h"
 #import <Masonry/Masonry.h>
 #import "UIView+WXFrame.h"
+#import "SnapViewController.h"
 
 @interface LinkCell : UIView
 @property (nonatomic, strong) UIButton *button;
@@ -253,7 +254,7 @@
 @property (nonatomic, strong)YLADBannerView *bannerView;
 @property (nonatomic, strong)CADisplayLink *displayLink;
 @property (nonatomic, assign)CFTimeInterval currentTime;
-
+@property (nonatomic, strong)UIView *content;
 @end
 
 @implementation SecondMasonryViewController
@@ -308,12 +309,7 @@
     UIView *container = UIView.new;
     container.backgroundColor = [UIColor redColor];
     [content addSubview:container];
-    [container mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(content).insets(UIEdgeInsetsMake(0, 20, 0, 20));
-        make.center.equalTo(content);
-        make.top.greaterThanOrEqualTo(content).offset(30);
-        make.bottom.lessThanOrEqualTo(content).offset(-30);
-    }];
+
     
     UILabel *label1 = UILabel.new;
     label1.textColor = [UIColor whiteColor];
@@ -335,6 +331,26 @@
     label1.text = @"123123123123123123123123123123132131231231231231231231231231231231321312312312312312312312312312312313213";
     label2.text = @"123";
     
+    UIView *bottomContaniner = [UIView new];
+    bottomContaniner.backgroundColor = [UIColor orangeColor];
+    [container addSubview:bottomContaniner];
+
+    [container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(content).insets(UIEdgeInsetsMake(0, 20, 0, 20));
+        make.top.equalTo(@(30));
+    }];
+    
+    [bottomContaniner mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(content).insets(UIEdgeInsetsMake(0, 20, 0, 20));
+        make.top.equalTo(container.mas_bottom).offset(30);
+        make.bottom.equalTo(content.mas_bottom).offset(-30);
+        make.height.equalTo(@(1000));
+    }];
+    
+    self.content = content;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(snap)];
+    [self.view addGestureRecognizer:tap];
     
 //    self.linkCell = ({
 //        LinkCell *cell = [[LinkCell alloc]init];
@@ -379,6 +395,29 @@
 //        }];
 //    });
 
+}
+
+- (void)snap{
+    SnapViewController *vc = [[SnapViewController alloc]init];
+    vc.snapImg = [self captureView:self.content];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (UIImage *)captureView:(UIView *)view{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
+//    if (drawBlock) {
+//        drawBlock();
+//    } else {
+        [self.content drawViewHierarchyInRect:view.bounds
+                   afterScreenUpdates:NO];
+//    }
+//    if (block) {
+//        CGContextRef context = UIGraphicsGetCurrentContext();
+//        block(context);
+//    }
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 - (void)startTimer

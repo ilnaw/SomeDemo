@@ -8,9 +8,6 @@
 
 #import "MainViewController.h"
 #import "PageViewController.h"
-#import "PGOneViewController.h"
-#import "PGTwoViewController.h"
-#import "PGThreeViewController.h"
 #import "BaseScrollView.h"
 #import "BottomViewController.h"
 #import "WLTransitioning.h"
@@ -20,7 +17,6 @@
 @property (strong, nonatomic)BaseScrollView *scrollView;
 @property (strong, nonatomic)UILabel    *calenderLabel;
 @property (strong, nonatomic)PageViewController *pageVC;
-@property (assign, nonatomic)BOOL       canScroll;
 @property (strong, nonatomic)WLTransitioning *modelTransitioning;
 @property (strong, nonatomic)UIPanGestureRecognizer *moveDown;
 @property (strong, nonatomic)CustomNavigationBar *navigationBar;
@@ -30,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.canScroll = true;
+//    self.canScroll = true;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTranslucent:false];
     self.navigationController.navigationBar.barTintColor = [UIColor lightGrayColor];
@@ -40,13 +36,8 @@
     [self addChildViewController:self.pageVC];
     [self.scrollView addSubview:self.pageVC.view];
     [self.view addSubview:self.navigationBar];
-
-    self.pageVC.vcs =  @[
-                         [[PGOneViewController alloc]init],
-                         [[PGTwoViewController alloc]init],
-                         [[PGThreeViewController alloc]init]
-                         ];
-    [self.pageVC setViewControllers:@[self.pageVC.vcs.firstObject] direction:UIPageViewControllerNavigationDirectionForward animated:true completion:nil];
+    
+    [self.pageVC setData];
     self.pageVC.block1(@"1");
     
     
@@ -116,15 +107,14 @@
 
 - (void)backToTop
 {
-    self.canScroll = true;
-    PGOneViewController *vc = (PGOneViewController *)self.pageVC.vcs.firstObject;
-    vc.canScroll = false;
     [self.scrollView setContentOffset:CGPointZero animated:true];
+    [self.pageVC setScrollViewGestureEnaled:NO];
+    [self.pageVC scrollToTop];
 }
 
 - (void)changeScrollStatus
 {
-    self.canScroll = true;
+//    self.canScroll = true;
 }
 
 #pragma mark - delegate and dataSource
@@ -136,15 +126,13 @@
     //scrollView 嵌套
     if (offset >= height) {
          [scrollView setContentOffset:CGPointMake(0, height)];
-        if (self.canScroll) {
-            self.canScroll = false;
-            PGOneViewController *vc = (PGOneViewController *)self.pageVC.vcs.firstObject;
-            vc.canScroll = true;
+        if (!self.pageVC.gestureAbled) {
+            [self.pageVC setScrollViewGestureEnaled:YES];
         }
     }
     else
     {
-        if (!self.canScroll) {
+        if (self.pageVC.gestureAbled) {
             [scrollView setContentOffset:CGPointMake(0, height)];
         }
     }
@@ -152,23 +140,7 @@
     if (offset <= 0) {
         [scrollView setContentOffset:CGPointZero];
     }
-    
-    //navigationBar
-    if (self.canScroll)
-    {
-//        self.navigationItem.rightBarButtonItem = nil;
-    }
-    else
-    {
-//        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-//                                                  initWithTitle:@"回到顶部"
-//                                                  style:UIBarButtonItemStylePlain
-//                                                  target:self
-//                                                  action:@selector(backToTop)];
-    }
-    
-    
-    self.scrollView.showsVerticalScrollIndicator = self.canScroll;
+    self.scrollView.showsVerticalScrollIndicator = !self.pageVC.gestureAbled;
 }
 
 

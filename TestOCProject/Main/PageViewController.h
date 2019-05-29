@@ -11,8 +11,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PageViewController : UIPageViewController
-@property (strong, nonatomic)NSArray <UIViewController*> *vcs;
 @property (nonatomic, readonly ,copy) void (^block1)(NSString *name);
+
+- (void)setData;
+
+- (void)setScrollViewGestureEnaled:(BOOL)enabled;
+
+@property (assign, nonatomic)BOOL gestureAbled;
+
+- (void)scrollToTop;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,7 +14,8 @@
 #import "UIViewController+ImagePicker.h"
 #import <YYAsyncLayer/YYAsyncLayer.h>
 #import "SnapViewController.h"
-#import "YLPopoverController.h"
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <TZImagePickerController/TZAssetCell.h>
 
 @interface AsyncView: UIView
 @property (strong, nonatomic)UILabel  *nameLabel;
@@ -27,7 +28,6 @@
     self = [super init];
     if (self) {
         [self addSubview:self.nameLabel];
-
     }
     return self;
 }
@@ -261,21 +261,43 @@
 //    [self presentImagePicker:^(UIImage * image) {
 //        NSLog(@"%@",image);
 //    }];
-
-    YLPopoverAction *shareAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"分享" handler:^(YLPopoverAction *action) {
-        UIImage *snapImage = [self snapScrollViewContent];
-        SnapViewController *vc = [SnapViewController new];
-        vc.snapImg = snapImage;
-        
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-    YLPopoverAction *deleteAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"删除" handler:^(YLPopoverAction *action) {
-        
-    }];
-    YLPopoverController *controller = [YLPopoverController popoverControllerWithPreferredStyle:YLPopoverControllerStyleDark];
-    [controller addAction:shareAction];
-    [controller addAction:deleteAction];
-    [controller showToView:sender];
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//        [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
+//    }
+    
+//    YLPopoverAction *shareAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"分享" handler:^(YLPopoverAction *action) {
+//        UIImage *snapImage = [self snapScrollViewContent];
+//        SnapViewController *vc = [SnapViewController new];
+//        vc.snapImg = snapImage;
+//
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }];
+//    YLPopoverAction *deleteAction = [YLPopoverAction actionWithImage:[UIImage imageNamed:@"button_delete_icon"] title:@"删除" handler:^(YLPopoverAction *action) {
+//
+//    }];
+//    YLPopoverController *controller = [YLPopoverController popoverControllerWithPreferredStyle:YLPopoverControllerStyleDark];
+//    [controller addAction:shareAction];
+//    [controller addAction:deleteAction];
+//    [controller showToView:sender];
+    TZImagePickerController *picker = [[TZImagePickerController alloc]initWithMaxImagesCount:9 delegate:nil];
+    picker.iconThemeColor = [UIColor redColor];
+    picker.naviBgColor = [UIColor redColor];
+    picker.naviTitleColor = [UIColor whiteColor];
+    picker.oKButtonTitleColorNormal = [UIColor redColor];
+    picker.oKButtonTitleColorDisabled = [UIColor lightGrayColor];
+    picker.allowPickingVideo = NO;
+    picker.sortAscendingByModificationDate = NO;
+    picker.allowPickingOriginalPhoto = NO;
+    picker.assetCellDidSetModelBlock = ^(TZAssetCell *cell, UIImageView *imageView, UIImageView *selectImageView, UILabel *indexLabel, UIView *bottomView, UILabel *timeLength, UIImageView *videoImgView) {
+        cell.photoDefImage = [UIImage imageNamed:@"tx-yytg-tips-icon"];
+        cell.photoSelImage = [UIImage imageNamed:@"jiankys14_icon"];
+        selectImageView.image = [UIImage imageNamed:@"tx-yytg-tips-icon"];
+    };
+    picker.photoPreviewPageUIConfigBlock = ^(UICollectionView *collectionView, UIView *naviBar, UIButton *backButton, UIButton *selectButton, UILabel *indexLabel, UIView *toolBar, UIButton *originalPhotoButton, UILabel *originalPhotoLabel, UIButton *doneButton, UIImageView *numberImageView, UILabel *numberLabel) {
+        [selectButton setImage:[UIImage imageNamed:@"tx-yytg-tips-icon"] forState:UIControlStateNormal];
+        [selectButton setImage:[UIImage imageNamed:@"jiankys14_icon"] forState:UIControlStateSelected];
+    };
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 - (UIImage *)snapScrollViewContent
@@ -304,6 +326,23 @@
     self.scrollView.frame = originFrame;
     
     return image;
+}
+
+- (UIImage *)captureView:(UIView *)view{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
+    //    if (drawBlock) {
+    //        drawBlock();
+    //    } else {
+    [view drawViewHierarchyInRect:view.bounds
+                       afterScreenUpdates:NO];
+    //    }
+    //    if (block) {
+    //        CGContextRef context = UIGraphicsGetCurrentContext();
+    //        block(context);
+    //    }
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 - (void)viewDidLayoutSubviews

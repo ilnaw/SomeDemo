@@ -36,6 +36,14 @@
 		27A344EF2254A24600C0EFC7 /* RACViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A344EE2254A24600C0EFC7 /* RACViewModel.m */; };
 		27D7A6792247A3BC009F69CF /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D7A6782247A3BC009F69CF /* NextViewController.m */; };
 		33DE689F1050E17E2827B3D6 /* libPods-TestOCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C256FDF7E11FC919D05A4895 /* libPods-TestOCProject.a */; };
+		77026B9C229E62A30065D7A1 /* YLBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026B9B229E62A30065D7A1 /* YLBaseView.m */; };
+		77026B9F229E62BF0065D7A1 /* YLRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026B9E229E62BF0065D7A1 /* YLRedView.m */; };
+		77026BA2229E62CF0065D7A1 /* YLBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026BA1229E62CF0065D7A1 /* YLBlueView.m */; };
+		77026BA5229E651C0065D7A1 /* YLBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026BA4229E651C0065D7A1 /* YLBViewController.m */; };
+		77026BA8229E6CA60065D7A1 /* YLCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026BA7229E6CA60065D7A1 /* YLCView.m */; };
+		77026BAA229E6CC00065D7A1 /* YLCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77026BA9229E6CC00065D7A1 /* YLCView.xib */; };
+		77026BAE229E6F670065D7A1 /* YLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77026BAC229E6F670065D7A1 /* YLCViewController.m */; };
+		77026BAF229E6F670065D7A1 /* YLCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77026BAD229E6F670065D7A1 /* YLCViewController.xib */; };
 		7713F509228907C90009797D /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713F508228907C80009797D /* SnapViewController.m */; };
 		7715DF94227FE0B3000D58AF /* UIView+WXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7715DF92227FE0B2000D58AF /* UIView+WXFrame.m */; };
 		7715DF9A228007BE000D58AF /* YLPopQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7715DF99228007BE000D58AF /* YLPopQueueManager.m */; };
@@ -52,6 +60,7 @@
 		773F0D912264764600815D58 /* YLCustomBottomLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D902264764600815D58 /* YLCustomBottomLineView.m */; };
 		774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */; };
 		774EE3B1228ABA4B00ABFA7F /* YLCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */; };
+		774EE3B8228BF63B00ABFA7F /* YLPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */; };
 		775F5403226D8B5F00CFEE8A /* NSArray+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5401226D8B5E00CFEE8A /* NSArray+Blocks.m */; };
 		775F5406226D8B6700CFEE8A /* NSDictionary+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5405226D8B6600CFEE8A /* NSDictionary+Blocks.m */; };
 		775F540C226D964B00CFEE8A /* CopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F540B226D964B00CFEE8A /* CopyModel.m */; };
@@ -59,8 +68,6 @@
 		775F541C226DA38800CFEE8A /* UIViewController+SafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F541B226DA38800CFEE8A /* UIViewController+SafeArea.m */; };
 		775F5423226F147800CFEE8A /* YLChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5422226F147800CFEE8A /* YLChain.m */; };
 		775F5426226F1C3B00CFEE8A /* Tclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F5425226F1C3B00CFEE8A /* Tclass.m */; };
-		77BFB9D1228A565500B48949 /* YLPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9CF228A565500B48949 /* YLPopoverController.m */; };
-		77BFB9D2228A565500B48949 /* YLPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D0228A565500B48949 /* YLPopoverAction.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -168,6 +175,20 @@
 		27D7A67B2247A4CE009F69CF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		358792513C0D5C23CF86F477 /* Pods-TestOCProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOCProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOCProject/Pods-TestOCProject.release.xcconfig"; sourceTree = "<group>"; };
 		664DD564821815C81E9C7AA4 /* Pods-TestOCProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOCProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOCProject/Pods-TestOCProject.debug.xcconfig"; sourceTree = "<group>"; };
+		77026B9A229E62A30065D7A1 /* YLBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBaseView.h; sourceTree = "<group>"; };
+		77026B9B229E62A30065D7A1 /* YLBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBaseView.m; sourceTree = "<group>"; };
+		77026B9D229E62BF0065D7A1 /* YLRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRedView.h; sourceTree = "<group>"; };
+		77026B9E229E62BF0065D7A1 /* YLRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRedView.m; sourceTree = "<group>"; };
+		77026BA0229E62CF0065D7A1 /* YLBlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBlueView.h; sourceTree = "<group>"; };
+		77026BA1229E62CF0065D7A1 /* YLBlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBlueView.m; sourceTree = "<group>"; };
+		77026BA3229E651C0065D7A1 /* YLBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBViewController.h; sourceTree = "<group>"; };
+		77026BA4229E651C0065D7A1 /* YLBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBViewController.m; sourceTree = "<group>"; };
+		77026BA6229E6CA60065D7A1 /* YLCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCView.h; sourceTree = "<group>"; };
+		77026BA7229E6CA60065D7A1 /* YLCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCView.m; sourceTree = "<group>"; };
+		77026BA9229E6CC00065D7A1 /* YLCView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCView.xib; sourceTree = "<group>"; };
+		77026BAB229E6F670065D7A1 /* YLCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCViewController.h; sourceTree = "<group>"; };
+		77026BAC229E6F670065D7A1 /* YLCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCViewController.m; sourceTree = "<group>"; };
+		77026BAD229E6F670065D7A1 /* YLCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCViewController.xib; sourceTree = "<group>"; };
 		7713F507228907C80009797D /* SnapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapViewController.h; sourceTree = "<group>"; };
 		7713F508228907C80009797D /* SnapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapViewController.m; sourceTree = "<group>"; };
 		7715DF92227FE0B2000D58AF /* UIView+WXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WXFrame.m"; sourceTree = "<group>"; };
@@ -200,6 +221,8 @@
 		774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCoinProgressView.m; sourceTree = "<group>"; };
 		774EE3AF228ABA4B00ABFA7F /* YLCoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCoinViewController.h; sourceTree = "<group>"; };
 		774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCoinViewController.m; sourceTree = "<group>"; };
+		774EE3B6228BF63B00ABFA7F /* YLPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPopoverView.h; sourceTree = "<group>"; };
+		774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPopoverView.m; sourceTree = "<group>"; };
 		775F5401226D8B5E00CFEE8A /* NSArray+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Blocks.m"; sourceTree = "<group>"; };
 		775F5402226D8B5F00CFEE8A /* NSArray+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Blocks.h"; sourceTree = "<group>"; };
 		775F5404226D8B6600CFEE8A /* NSDictionary+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Blocks.h"; sourceTree = "<group>"; };
@@ -214,10 +237,6 @@
 		775F5422226F147800CFEE8A /* YLChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLChain.m; sourceTree = "<group>"; };
 		775F5424226F1C3B00CFEE8A /* Tclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tclass.h; sourceTree = "<group>"; };
 		775F5425226F1C3B00CFEE8A /* Tclass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tclass.m; sourceTree = "<group>"; };
-		77BFB9CD228A565500B48949 /* YLPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPopoverController.h; sourceTree = "<group>"; };
-		77BFB9CE228A565500B48949 /* YLPopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPopoverAction.h; sourceTree = "<group>"; };
-		77BFB9CF228A565500B48949 /* YLPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPopoverController.m; sourceTree = "<group>"; };
-		77BFB9D0228A565500B48949 /* YLPopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -251,6 +270,7 @@
 		77C9D88D2283D26F0022991E /* YLPlanBoradView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPlanBoradView.m; sourceTree = "<group>"; };
 		77C9D88F2284238E0022991E /* FakeScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeScrollViewController.h; sourceTree = "<group>"; };
 		77C9D8902284238E0022991E /* FakeScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeScrollViewController.m; sourceTree = "<group>"; };
+		77CCFECB229BD801005C6327 /* ScrollViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewProtocol.h; sourceTree = "<group>"; };
 		A570281B225DE59700758F77 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		A570281C225DE59700758F77 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
 		A570281D225DE59700758F77 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
@@ -304,6 +324,7 @@
 		2715F3012248B82000164D88 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				77CCFECB229BD801005C6327 /* ScrollViewProtocol.h */,
 				2715F3022248B84200164D88 /* PageViewController.h */,
 				2715F3032248B84200164D88 /* PageViewController.m */,
 				2715F3052248B87300164D88 /* PGOneViewController.h */,
@@ -412,10 +433,9 @@
 				775F540B226D964B00CFEE8A /* CopyModel.m */,
 				77BFB9DD228A5E6300B48949 /* UIButton+YLButtonLayoutType.h */,
 				77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */,
-				77BFB9CE228A565500B48949 /* YLPopoverAction.h */,
-				77BFB9D0228A565500B48949 /* YLPopoverAction.m */,
-				77BFB9CD228A565500B48949 /* YLPopoverController.h */,
-				77BFB9CF228A565500B48949 /* YLPopoverController.m */,
+				774EE3B6228BF63B00ABFA7F /* YLPopoverView.h */,
+				774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */,
+				77026B99229E62800065D7A1 /* BaseViewTest */,
 				77BFB9D3228A592900B48949 /* PopoverView */,
 				77C6BC84227596D6007AE802 /* Factory */,
 				271D3D7C2255A7BB00C67241 /* Utils */,
@@ -512,6 +532,27 @@
 				271F2A9F2239FB2A00A3580F /* Info.plist */,
 			);
 			path = TestOCProjectUITests;
+			sourceTree = "<group>";
+		};
+		77026B99229E62800065D7A1 /* BaseViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				77026B9A229E62A30065D7A1 /* YLBaseView.h */,
+				77026B9B229E62A30065D7A1 /* YLBaseView.m */,
+				77026B9D229E62BF0065D7A1 /* YLRedView.h */,
+				77026B9E229E62BF0065D7A1 /* YLRedView.m */,
+				77026BA0229E62CF0065D7A1 /* YLBlueView.h */,
+				77026BA1229E62CF0065D7A1 /* YLBlueView.m */,
+				77026BA6229E6CA60065D7A1 /* YLCView.h */,
+				77026BA7229E6CA60065D7A1 /* YLCView.m */,
+				77026BA9229E6CC00065D7A1 /* YLCView.xib */,
+				77026BA3229E651C0065D7A1 /* YLBViewController.h */,
+				77026BA4229E651C0065D7A1 /* YLBViewController.m */,
+				77026BAB229E6F670065D7A1 /* YLCViewController.h */,
+				77026BAC229E6F670065D7A1 /* YLCViewController.m */,
+				77026BAD229E6F670065D7A1 /* YLCViewController.xib */,
+			);
+			path = BaseViewTest;
 			sourceTree = "<group>";
 		};
 		77BFB9D3228A592900B48949 /* PopoverView */ = {
@@ -669,6 +710,8 @@
 				271F2A862239FB2A00A3580F /* LaunchScreen.storyboard in Resources */,
 				271F2A832239FB2A00A3580F /* Assets.xcassets in Resources */,
 				271F2A812239FB2800A3580F /* Main.storyboard in Resources */,
+				77026BAF229E6F670065D7A1 /* YLCViewController.xib in Resources */,
+				77026BAA229E6CC00065D7A1 /* YLCView.xib in Resources */,
 				77C9D8882283B8840022991E /* YLDrawXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,12 +765,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestOCProject/Pods-TestOCProject-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -745,6 +790,7 @@
 				775F540C226D964B00CFEE8A /* CopyModel.m in Sources */,
 				77BFB9DF228A5E6300B48949 /* UIButton+YLButtonLayoutType.m in Sources */,
 				A5702825225F004E00758F77 /* YLDateManager.m in Sources */,
+				77026BA2229E62CF0065D7A1 /* YLBlueView.m in Sources */,
 				7737699B22816067008DE8C1 /* YLWeekDestinyView.m in Sources */,
 				7715DFA3228026C1000D58AF /* YLAdCountHelper.m in Sources */,
 				775F5423226F147800CFEE8A /* YLChain.m in Sources */,
@@ -756,7 +802,7 @@
 				775F5403226D8B5F00CFEE8A /* NSArray+Blocks.m in Sources */,
 				271F2A7E2239FB2800A3580F /* ViewController.m in Sources */,
 				2715F3072248B87300164D88 /* PGOneViewController.m in Sources */,
-				77BFB9D2228A565500B48949 /* YLPopoverAction.m in Sources */,
+				77026BA5229E651C0065D7A1 /* YLBViewController.m in Sources */,
 				7715DF94227FE0B3000D58AF /* UIView+WXFrame.m in Sources */,
 				2715F3042248B84200164D88 /* PageViewController.m in Sources */,
 				2715F3102248C5AC00164D88 /* MainViewController.m in Sources */,
@@ -776,12 +822,14 @@
 				77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */,
 				A5BF097F225C690100C02A81 /* YLSettingTableViewCell.m in Sources */,
 				27A344EF2254A24600C0EFC7 /* RACViewModel.m in Sources */,
+				774EE3B8228BF63B00ABFA7F /* YLPopoverView.m in Sources */,
 				77C9D88E2283D26F0022991E /* YLPlanBoradView.m in Sources */,
 				27A344EC2254A23100C0EFC7 /* RACViewController.m in Sources */,
 				7715DFA022802086000D58AF /* NSMutableArray+Queue_Stack.m in Sources */,
 				A5BF0982225C75FC00C02A81 /* YLMasonryViewController.m in Sources */,
 				2715F30D2248B89200164D88 /* PGThreeViewController.m in Sources */,
 				773F0D912264764600815D58 /* YLCustomBottomLineView.m in Sources */,
+				77026B9C229E62A30065D7A1 /* YLBaseView.m in Sources */,
 				2715F313224904BC00164D88 /* BaseScrollView.m in Sources */,
 				27212E46223F6CE000CA6E4C /* TableViewCell.m in Sources */,
 				A5702822225DE5AB00758F77 /* XibView.m in Sources */,
@@ -790,7 +838,6 @@
 				77C9D8802282A80F0022991E /* YLDrawDestinyViewController.m in Sources */,
 				77C6BC8D2275976C007AE802 /* EuropeEatViewController.m in Sources */,
 				271F2A892239FB2A00A3580F /* main.m in Sources */,
-				77BFB9D1228A565500B48949 /* YLPopoverController.m in Sources */,
 				77C9D88B2283C3E80022991E /* YLLayerViewController.m in Sources */,
 				27212E4A223F6E2100CA6E4C /* UITableViewCell+reuse.m in Sources */,
 				27D7A6792247A3BC009F69CF /* NextViewController.m in Sources */,
@@ -798,6 +845,8 @@
 				774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */,
 				77C6BC8322757919007AE802 /* SecondMasonryViewController.m in Sources */,
 				775F5416226D9C0800CFEE8A /* UIView+ReuseIdentifier.m in Sources */,
+				77026BAE229E6F670065D7A1 /* YLCViewController.m in Sources */,
+				77026B9F229E62BF0065D7A1 /* YLRedView.m in Sources */,
 				271D3D7B22559B6400C67241 /* AsyncViewController.m in Sources */,
 				271FC69D2247733100C2D7EB /* TableViewController.m in Sources */,
 				773F0D8B22642CBA00815D58 /* DrawView.m in Sources */,
@@ -806,6 +855,7 @@
 				2715F31622490C1600164D88 /* NormalRefreshHeader.m in Sources */,
 				775F5406226D8B6700CFEE8A /* NSDictionary+Blocks.m in Sources */,
 				77BFB9E2228A61E900B48949 /* ButtonTypeViewController.m in Sources */,
+				77026BA8229E6CA60065D7A1 /* YLCView.m in Sources */,
 				77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */,
 				A5F7FCE0225C3D0B00D763F7 /* YLNotificationType.m in Sources */,
 				2715F30A2248B88900164D88 /* PGTwoViewController.m in Sources */,

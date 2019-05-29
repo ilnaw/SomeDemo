@@ -28,6 +28,7 @@ PODS:
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
+  - TZImagePickerController (3.2.0)
   - UICountingLabel (1.4.1)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - YYAsyncLayer (1.0)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - ReactiveObjC
   - SDWebImage (~> 5.0.0)
   - Texture
+  - TZImagePickerController
   - UICountingLabel
   - "UITableView+FDTemplateLayoutCell (~> 1.6)"
   - YYAsyncLayer
@@ -54,6 +56,7 @@ SPEC REPOS:
     - ReactiveObjC
     - SDWebImage
     - Texture
+    - TZImagePickerController
     - UICountingLabel
     - "UITableView+FDTemplateLayoutCell"
     - YYAsyncLayer
@@ -68,10 +71,11 @@ SPEC CHECKSUMS:
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+  TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
 
-PODFILE CHECKSUM: 553ed585a742c7a8a208cc1ded7ab80f45c805a9
+PODFILE CHECKSUM: 0933d59c525f4b28b90363b15f13ed399cc2a458
 
 COCOAPODS: 1.6.1

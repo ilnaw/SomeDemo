@@ -13,7 +13,11 @@
 @end
 
 @implementation PGThreeViewController
+@synthesize scrollDelegate;
 
+- (UIScrollView *)sc{
+    return nil;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];

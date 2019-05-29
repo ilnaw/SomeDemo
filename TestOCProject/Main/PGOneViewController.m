@@ -14,6 +14,7 @@
 @end
 
 @implementation PGOneViewController
+@synthesize scrollDelegate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,30 +42,15 @@
 //    NSLog(@"------------1%@",NSStringFromSelector(_cmd));
 }
 
+- (UIScrollView *)sc
+{
+    return self.scrollView;
+}
+
 #pragma mark - delegate and dataSource
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"%.2f",scrollView.contentOffset.y);
-    if (!self.canScroll) {
-        [scrollView setContentOffset:CGPointZero];
-    }
-    if(scrollView.contentOffset.y <= 0)
-    {
-        //注释为 万年历效果
-//        self.canScroll = false;
-//        scrollView.contentOffset = CGPointZero;
-        //
-//        [[NSNotificationCenter defaultCenter]postNotificationName:@"leaveTop" object:nil];
-    }
-    scrollView.showsVerticalScrollIndicator = self.canScroll;
-}
-
-- (void)setCanScroll:(BOOL)canScroll
-{
-    _canScroll = canScroll;
-    if (!_canScroll) {//如果cell不能滑动，代表到了顶部，修改所有子vc的状态回到顶部
-        self.scrollView.contentOffset = CGPointZero;
-    }
+    [self.scrollDelegate scrollViewDidScroll:scrollView];
 }
 
 #pragma mark - getter and setter

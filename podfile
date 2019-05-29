@@ -11,6 +11,7 @@ def pods
    pod "Texture"
    pod 'SDWebImage', '~> 5.0.0'
    pod 'UICountingLabel'
+   pod 'TZImagePickerController' 
 end
 
 target 'TestOCProject' do

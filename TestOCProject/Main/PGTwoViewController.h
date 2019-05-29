@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PGTwoViewController : UIViewController
-@property (assign, nonatomic)BOOL vcScroll;
+@interface PGTwoViewController : UIViewController<PageScrollViewDelegate>
+
 @end
 
 NS_ASSUME_NONNULL_END

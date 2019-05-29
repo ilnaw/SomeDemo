@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PGOneViewController : UIViewController
-@property (assign, nonatomic)BOOL canScroll;
+@interface PGOneViewController : UIViewController<PageScrollViewDelegate>
+
 @end
 
 NS_ASSUME_NONNULL_END

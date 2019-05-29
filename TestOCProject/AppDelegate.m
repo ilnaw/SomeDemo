@@ -39,6 +39,8 @@
 #import "FakeScrollViewController.h"
 #import "ButtonTypeViewController.h"
 #import "YLCoinViewController.h"
+#import "YLBViewController.h"
+#import "YLCViewController.h"
 
 @interface AppDelegate ()
 
@@ -72,7 +74,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YLCoinViewController *rac = [[YLCoinViewController alloc]init];
+    ScrollOffsetViewController *rac = [[ScrollOffsetViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     
