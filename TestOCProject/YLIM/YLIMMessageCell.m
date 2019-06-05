@@ -29,6 +29,7 @@
 {
     [super layoutSubviews];
     //各个view的frame设置
+    
 }
 
 - (void)setModel:(YLIMMessageModel *)model
