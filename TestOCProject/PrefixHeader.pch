@@ -19,5 +19,6 @@
 #import <Masonry/Masonry.h>
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "UIView+ReuseIdentifier.h"
+#import "UIView+WXFrame.h"
 
 #endif /* PrefixHeader_pch */

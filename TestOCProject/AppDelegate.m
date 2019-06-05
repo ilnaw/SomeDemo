@@ -43,6 +43,7 @@
 #import "YLCViewController.h"
 #import "NSDateFormatter+Convenience.h"
 #import "YLCollectionViewController.h"
+#import "YLSessionViewController.h"
 
 @interface AppDelegate ()
 
@@ -95,13 +96,12 @@
     NSString *key = nil;
     NSString *value22 = dic[key];
     
-
     
     
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YLCollectionViewController *rac = [[YLCollectionViewController alloc]init];
+    YLSessionViewController *rac = [[YLSessionViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     

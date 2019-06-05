@@ -7,15 +7,49 @@
 //
 
 #import "YLIMMessageTextView.h"
+#import "YLIMMessageModel.h"
+
+@interface YLIMMessageTextView()
+
+@end
 
 @implementation YLIMMessageTextView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self configUI];
+    }
+    return self;
 }
-*/
+- (void)configUI{
+    [super configUI];
+    UILabel *label = [[UILabel alloc]init];
+    label.font = [UIFont systemFontOfSize:14.f];
+    label.textAlignment = NSTextAlignmentJustified;
+    label.textColor = [UIColor lightGrayColor];
+    label.numberOfLines = 0;
+    [self addSubview:label];
+    self.contentLabel = label;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    YLIMMessageLayoutConfig *layout = self.model.layout;
+    CGFloat top = layout.bubbleViewInsets.top;
+    CGFloat left = layout.bubbleViewInsets.left;
+    CGSize size = layout.contentSize;
+    
+    self.contentLabel.top = top;
+    self.contentLabel.left = left;
+    self.contentLabel.yl_size = size;
+}
+- (void)refreshData:(YLIMMessageModel *)model
+{
+    self.model = model;
+    self.contentLabel.text = self.model.message.content;
+}
 
 @end

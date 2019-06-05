@@ -7,21 +7,45 @@
 //
 
 #import "YLIMMessageBubbleView.h"
+#import "YLIMMessageTextView.h"
+#import "YLIMMessageImageView.h"
+#import "YLIMMessageAnswerView.h"
+#import "YLIMMessageRedPacketView.h"
+#import "YLIMMessageModel.h"
 
 @implementation YLIMMessageBubbleView
-
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)init
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor blackColor];
+        [self configUI];
     }
     return self;
 }
 
-- (void)refreshData:(YLIMMessageModel *)message
++ (instancetype)bubbleViewWithMessage:(YLIMMessageModel *)message
+{
+    YLIMMessageBubbleView *view = nil;
+    if (message.message.messageType == YLMessageTypeText) {
+        view = [[YLIMMessageTextView alloc]init];
+    }else if (message.message.messageType == YLMessageTypeImage){
+        view = [[YLIMMessageImageView alloc]init];
+    }else if (message.message.messageType == YLMessageTypeAnswer){
+        view = [[YLIMMessageAnswerView alloc]init];
+    }else if (message.message.messageType == YLMessageTypeRedPacket){
+        view = [[YLIMMessageRedPacketView alloc]init];
+    }
+    return view;
+}
+
+- (void)configUI
+{
+    self.backgroundColor = [UIColor blackColor];
+    self.layer.cornerRadius = 4;
+}
+
+- (void)refreshData:(YLIMMessageModel *)model
 {
     
 }
-
 @end

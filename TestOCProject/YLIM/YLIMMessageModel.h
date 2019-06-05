@@ -20,7 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong)YLIMMessageLayoutConfig *layout;
 
 
-- (instancetype)initWithMessage:(YLMessageModel *)message;
++ (instancetype)messageFromIMData:(YLMessageModel *)message;
+
+//其他消息构造
++ (instancetype)messageFromYLData:(NSDictionary *)dic;
+
+//每种类型一种重用id
+- (NSString *)reuseId;
 
 @end
 

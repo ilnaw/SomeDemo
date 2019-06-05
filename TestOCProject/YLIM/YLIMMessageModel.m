@@ -13,12 +13,33 @@
 @end
 
 @implementation YLIMMessageModel
-- (instancetype)initWithMessage:(YLMessageModel *)message
+
++ (instancetype)messageFromIMData:(YLMessageModel *)message
 {
-    if (self = [super init]) {
-        self.message = message;
-        self.layout = [[YLIMMessageLayoutConfig alloc]initWithMessage:message];
+    YLIMMessageModel *model = [YLIMMessageModel new];
+    model.message = message;
+    model.layout = [[YLIMMessageLayoutConfig alloc]initWithMessage:message];
+    return model;
+}
+
+- (NSString *)reuseId
+{
+    switch (self.message.messageType) {
+        case YLMessageTypeText:
+            return @"YLMessageTypeTextCell";
+            break;
+        case YLMessageTypeImage:
+            return @"YLMessageTypeImageCell";
+            break;
+        case YLMessageTypeRedPacket:
+            return @"YLMessageTypeRedPacketCell";
+            break;
+        case YLMessageTypeAnswer:
+            return @"YLMessageTypeAnswerCell";
+            break;
+        default:
+            return @"nullCell";
+            break;
     }
-    return self;
 }
 @end

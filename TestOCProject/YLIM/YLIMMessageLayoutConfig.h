@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 //内容内边距
 @property (nonatomic, readonly)UIEdgeInsets bubbleViewInsets;
 //内容大小
-@property (nonatomic, readonly)CGSize bubbleViewSize;
+@property (nonatomic, readonly)CGSize contentSize;
 //头像间距
 @property (nonatomic, readonly)CGPoint avatarMargin;
 //昵称间距

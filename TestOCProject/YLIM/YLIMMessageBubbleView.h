@@ -13,7 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLIMMessageBubbleView : UIView
 
-- (void)refreshData:(YLIMMessageModel *)message;
+@property (nonatomic, strong)YLIMMessageModel *model;
+
++ (instancetype)bubbleViewWithMessage:(YLIMMessageModel *)message;
+
+//自定义界面
+- (void)configUI;
+
+//刷新界面
+- (void)refreshData:(YLIMMessageModel*)model;
+
 
 @end
 

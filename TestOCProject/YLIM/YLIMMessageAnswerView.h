@@ -1,8 +1,8 @@
 //
-//  YLIMMessageTextView.h
+//  YLIMMessageAnswerView.h
 //  TestOCProject
 //
-//  Created by wl on 2019/6/4.
+//  Created by wl on 2019/6/5.
 //  Copyright © 2019年 wanli. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLIMMessageTextView : YLIMMessageBubbleView
-
-@property (nonatomic, strong)UILabel *contentLabel;
+@interface YLIMMessageAnswerView : YLIMMessageBubbleView
 
 @end
 
