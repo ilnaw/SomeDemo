@@ -98,7 +98,6 @@
 
     
     
-    
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
