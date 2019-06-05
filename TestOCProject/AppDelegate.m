@@ -41,6 +41,8 @@
 #import "YLCoinViewController.h"
 #import "YLBViewController.h"
 #import "YLCViewController.h"
+#import "NSDateFormatter+Convenience.h"
+#import "YLCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -51,7 +53,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-     CGFloat level = [[UIDevice currentDevice] batteryLevel];
+    NSString *allowStr = @"123GHJGASD:|?";
+    NSCharacterSet *allowSet = [NSCharacterSet characterSetWithCharactersInString:@"2GS"];
+    NSArray *array = [allowStr componentsSeparatedByCharactersInSet:allowSet];
+    NSLog(@"------%@",array);
+    NSLog(@"----------%@",[array componentsJoinedByString:@""]);
+    
+    CGFloat level = [[UIDevice currentDevice] batteryLevel];
+    NSString *urlCompont = @"http://www.wnl.com/apiTest?name=1&age=2&gender=3";
+    NSURLComponents *components = [NSURLComponents componentsWithString:urlCompont];
+    NSLog(@"%@",components.host);
+    NSLog(@"%@",components.path);
+    [components.queryItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"key:%@",obj.name);
+        NSLog(@"value:%@",obj.value);
+    }];
+    NSLog(@"==================================");
+    NSCalendar *calender = [NSCalendar currentCalendar];
+    NSDateComponents *components2 = [calender components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:[NSDate date]];
+    
+    NSDate *todayDate = [NSDate date];
+    NSDateFormatter *formater = [NSDateFormatter dateFormatterWithFormat:@"yyyy-MM-dd HH-mm-ss"];
+    NSString *timeStr = [formater stringFromDate:todayDate];
+    NSLog(@"---------------%@",timeStr);
+    
     
     self.window.frame = UIScreen.mainScreen.bounds;
     EatViewController *vc = [EatViewController eatWithFoodList:@{
@@ -74,7 +99,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YLBViewController *rac = [[YLBViewController alloc]init];
+    YLCollectionViewController *rac = [[YLCollectionViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     

@@ -10,6 +10,8 @@
 #import "YLRedView.h"
 #import "YLBlueView.h"
 #import "YLCView.h"
+#import "YLShapeView.h"
+#import "UIView+DotBadge.h"
 
 @interface YLBViewController ()
 
@@ -38,6 +40,25 @@
 //    view3.frame = CGRectMake(100, 250, 180, 50);
 //    view3.posid = @"8888";
 //    [self.view addSubview:view3];
+    UIView *dotSuperView = [UIView new];
+    dotSuperView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:dotSuperView];
+    [dotSuperView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [dotSuperView layoutIfNeeded];
+    [dotSuperView showDotWithCorner:UIRectCornerTopLeft offset:CGPointZero];
+    
+    YLShapeView *shapeView = [YLShapeView new];
+    shapeView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:shapeView];
+    
+    [shapeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.left.equalTo(self.view).insets(UIEdgeInsetsMake(0, 10, 10, 0));
+        make.size.equalTo(@(CGSizeMake(100, 100)));
+    }];
     
     UIView *container = [UIView new];
     container.backgroundColor = [UIColor orangeColor];
@@ -47,18 +68,33 @@
         make.trailing.top.equalTo(self.view).insets(UIEdgeInsetsMake(10, 0, 0, 10));
     }];
     
+    UILabel *amountLabel = [UILabel new];
+    amountLabel.text = @"123.00";
+    amountLabel.font = [UIFont systemFontOfSize:60 weight:UIFontWeightSemibold];
+    [amountLabel sizeToFit];
+    CGSize amountSize = amountLabel.bounds.size;
+    [self.view addSubview:amountLabel];
+    
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = CGRectMake(10, 60, amountSize.width, amountSize.height);
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(0, 1);
+    gradientLayer.colors = @[(__bridge id)[[UIColor redColor] colorWithAlphaComponent:0.4].CGColor,(__bridge id)[UIColor redColor].CGColor];
+    gradientLayer.mask = amountLabel.layer;
+    [self.view.layer addSublayer:gradientLayer];
+    
     if(1){
         UIImageView *icon = [UIImageView new];
         icon.layer.masksToBounds = YES;
-        icon.contentMode = UIViewContentModeScaleAspectFill;
+//        icon.contentMode = UIViewContentModeScaleAspectFill;
         UIImage *iconImage = [UIImage imageNamed:@"v472_task_500_icon"];
         icon.image = iconImage;
         [container addSubview:icon];
         
         [icon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.left.bottom.equalTo(container).insets(UIEdgeInsetsMake(2, 2, 2, 0));
-            make.width.equalTo(@(38));
-            //        make.height.equalTo(@(60));
+            make.width.height.equalTo(@(38));
+//                    make.height.equalTo(@(60));
         }];
         
         UILabel *titleLabel = [UILabel new];
@@ -106,10 +142,6 @@
             }
         }];
     }
-    
-    
-    
-    
 }
 
 - (void)viewDidLayoutSubviews{
