@@ -8,12 +8,21 @@
 
 #import <UIKit/UIKit.h>
 @class YLIMMessageModel;
+@class YLMessageModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLIMMessageBubbleView : UIView
+@protocol YLIMMessageBubbleViewDelegate <NSObject>
+
+- (void)onEvent:(YLMessageModel *)data;
+
+@end
+
+@interface YLIMMessageBubbleView : UIControl
 
 @property (nonatomic, strong)YLIMMessageModel *model;
+
+@property (nonatomic, weak)id<YLIMMessageBubbleViewDelegate> delegate;
 
 + (instancetype)bubbleViewWithMessage:(YLIMMessageModel *)message;
 

@@ -87,6 +87,7 @@
 		776FE8E422A7CD4D0061DC11 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E322A7CD4C0061DC11 /* WechatIMG4.jpeg */; };
 		776FE8E622A7CD510061DC11 /* WechatIMG3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E522A7CD500061DC11 /* WechatIMG3.jpeg */; };
 		776FE8E822A7CDCA0061DC11 /* WechatIMG5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */; };
+		776FE8EB22A7D2FF0061DC11 /* YLGestureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8EA22A7D2FF0061DC11 /* YLGestureTestViewController.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -291,6 +292,8 @@
 		776FE8E322A7CD4C0061DC11 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
 		776FE8E522A7CD500061DC11 /* WechatIMG3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG3.jpeg; sourceTree = "<group>"; };
 		776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG5.jpeg; sourceTree = "<group>"; };
+		776FE8E922A7D2FF0061DC11 /* YLGestureTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YLGestureTestViewController.h; path = TestOCProject/YLGestureTestViewController.h; sourceTree = SOURCE_ROOT; };
+		776FE8EA22A7D2FF0061DC11 /* YLGestureTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YLGestureTestViewController.m; path = TestOCProject/YLGestureTestViewController.m; sourceTree = SOURCE_ROOT; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -613,6 +616,8 @@
 				77026BC022A508500065D7A1 /* YLCollectionViewController.m */,
 				77026BC222A50D570065D7A1 /* YLHorizontalPageLayout.h */,
 				77026BC322A50D570065D7A1 /* YLHorizontalPageLayout.m */,
+				776FE8E922A7D2FF0061DC11 /* YLGestureTestViewController.h */,
+				776FE8EA22A7D2FF0061DC11 /* YLGestureTestViewController.m */,
 				77026BAB229E6F670065D7A1 /* YLCViewController.h */,
 				77026BAC229E6F670065D7A1 /* YLCViewController.m */,
 				77026BAD229E6F670065D7A1 /* YLCViewController.xib */,
@@ -922,6 +927,7 @@
 				7737699E228162B6008DE8C1 /* YLCircelCountView.m in Sources */,
 				77C6BC8A2275975A007AE802 /* ChinaEatViewController.m in Sources */,
 				77BFB9DB228A592900B48949 /* PopoverView.m in Sources */,
+				776FE8EB22A7D2FF0061DC11 /* YLGestureTestViewController.m in Sources */,
 				77026BD122A621DD0065D7A1 /* YLIMMessageLayoutConfig.m in Sources */,
 				773F0D882264298100815D58 /* DrawViewController.m in Sources */,
 				A5F7FCE3225C47E800D763F7 /* YLExampleViewController.m in Sources */,

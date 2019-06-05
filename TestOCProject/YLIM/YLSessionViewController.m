@@ -11,7 +11,7 @@
 #import "YLIMMessageModel.h"
 #import "YLMessageModel.h"
 
-@interface YLSessionViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface YLSessionViewController ()<UITableViewDelegate,UITableViewDataSource,YLIMMessageDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *data;
 @end
@@ -31,6 +31,7 @@
         tableView.tableFooterView = [UIView new];
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         tableView;
     });
@@ -97,6 +98,54 @@
                            @"content":@"123",
                            @"url":@"123",
                            @"type":@3
+                           },                       @{
+                           @"left":@"1",
+                           @"group":@"1",
+                           @"content":@"12312313123123131231231312312313123123131231231312312313123123131231231312312313123123131231231312312313123123131231231312312313123123131231231312312313123123131231231312312313123123131231231312312313",
+                           @"url":@"123",
+                           @"type":@0
+                           },                       @{
+                           @"left":@"0",
+                           @"group":@"1",
+                           @"content":@"12312313123123131231231312312313",
+                           @"url":@"WechatIMG5.jpeg",
+                           @"type":@1
+                           },                       @{
+                           @"left":@"0",
+                           @"group":@"1",
+                           @"content":@"12312313123123131231231312312313",
+                           @"url":@"WechatIMG4.jpeg",
+                           @"type":@1
+                           },                       @{
+                           @"left":@"1",
+                           @"group":@"1",
+                           @"content":@"1231231312312313",
+                           @"url":@"123",
+                           @"type":@2
+                           },                       @{
+                           @"left":@"1",
+                           @"group":@"1",
+                           @"content":@"12312313123123131231231312",
+                           @"url":@"123",
+                           @"type":@0
+                           },                       @{
+                           @"left":@"1",
+                           @"group":@"0",
+                           @"content":@"12312313123123131231231312312313123123131231231312312313",
+                           @"url":@"123",
+                           @"type":@0
+                           },                       @{
+                           @"left":@"0",
+                           @"group":@"1",
+                           @"content":@"123",
+                           @"url":@"123",
+                           @"type":@0
+                           },                       @{
+                           @"left":@"0",
+                           @"group":@"1",
+                           @"content":@"123",
+                           @"url":@"123",
+                           @"type":@3
                            }
                        ];
     for (NSDictionary *dic in array) {
@@ -116,6 +165,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:identify];
     }
     cell.model = self.data[indexPath.row];
+    cell.delegate = self;
     return  cell;
 }
 
@@ -128,6 +178,10 @@
 {
     YLIMMessageModel *model = self.data[indexPath.row];
     return model.layout.cellHeight;
+}
+- (void)onEvent:(YLMessageModel *)data
+{
+    NSLog(@"--------点击了");
 }
 
 @end

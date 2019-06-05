@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "YLIMMessageModel.h"
 @class YLIMMessageBubbleView;
+@class YLMessageModel;
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol YLIMMessageDelegate <NSObject>
+
+- (void)onEvent:(YLMessageModel *)data;
+
+@end
 
 @interface YLIMMessageCell : UITableViewCell
 
@@ -38,6 +45,9 @@ NS_ASSUME_NONNULL_BEGIN
  内容
  */
 @property (nonatomic, strong)YLIMMessageBubbleView *bubbleView;
+
+
+@property (nonatomic, weak)id<YLIMMessageDelegate> delegate;
 
 @end
 

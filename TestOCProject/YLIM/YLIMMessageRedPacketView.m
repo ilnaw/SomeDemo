@@ -47,4 +47,10 @@
     self.model = model;
 }
 
+- (void)bubbleTouchUpInside:(id)sender{
+    if ([self.delegate respondsToSelector:@selector(onEvent:)]) {
+        [self.delegate onEvent:self.model.message];
+    }
+}
+
 @end

@@ -47,4 +47,10 @@
     self.model = model;
     self.imageView.image = [UIImage imageNamed:self.model.message.url];
 }
+
+- (void)bubbleTouchUpInside:(id)sender{
+    if ([self.delegate respondsToSelector:@selector(onEvent:)]) {
+        [self.delegate onEvent:self.model.message];
+    }
+}
 @end

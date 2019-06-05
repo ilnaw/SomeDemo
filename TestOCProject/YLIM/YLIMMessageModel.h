@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 //其他消息构造
 + (instancetype)messageFromYLData:(NSDictionary *)dic;
 
-//每种类型一种重用id
+//每种cell类型一种重用id
 - (NSString *)reuseId;
 
 @end

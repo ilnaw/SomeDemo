@@ -12,23 +12,41 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YLIMMessageLayoutConfig : NSObject
-//左右显示
+/**
+ 左右显示
+ */
 @property (nonatomic, readonly)BOOL showLeft;
-//是否现实昵称
+/**
+ 是否现实昵称
+ */
 @property (nonatomic, readonly)BOOL showNickName;
-//内容外边距
+/**
+ 气泡外边距
+ */
 @property (nonatomic, readonly)UIEdgeInsets bubbleViewOutInsets;
-//内容内边距
+/**
+ 气泡内边距
+ */
 @property (nonatomic, readonly)UIEdgeInsets bubbleViewInsets;
-//内容大小
+/**
+ 内容大小
+ */
 @property (nonatomic, readonly)CGSize contentSize;
-//头像间距
+/**
+ 头像间距
+ */
 @property (nonatomic, readonly)CGPoint avatarMargin;
-//昵称间距
+/**
+ 昵称间距
+ */
 @property (nonatomic, readonly)CGPoint nickNameMargin;
-//头像大小
+/**
+ 头像大小
+ */
 @property (nonatomic, readonly)CGSize avatarSize;
-//cell高度
+/**
+ cell高度 = 气泡外边距 + 气泡内边距 + 内容大小
+ */
 @property (nonatomic, readonly)CGFloat cellHeight;
 
 - (instancetype)initWithMessage:(YLMessageModel *)message;

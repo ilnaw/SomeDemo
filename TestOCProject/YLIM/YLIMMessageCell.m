@@ -9,6 +9,10 @@
 #import "YLIMMessageCell.h"
 #import "YLIMMessageBubbleView.h"
 
+@interface YLIMMessageCell()<YLIMMessageBubbleViewDelegate>
+
+@end
+
 @implementation YLIMMessageCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -66,6 +70,7 @@
     if (_bubbleView == nil) {
         self.bubbleView = [YLIMMessageBubbleView bubbleViewWithMessage:self.model];
         [self.bubbleView refreshData:self.model];
+        self.bubbleView.delegate = self;
         [self addSubview:self.bubbleView];
     }
 }
@@ -110,6 +115,13 @@
     
     self.bubbleView.top = outInset.top;
     self.bubbleView.left = outInset.left;
-    
+}
+
+#pragma mark - bubbleDelegate
+- (void)onEvent:(YLMessageModel *)data
+{
+    if([self.delegate respondsToSelector:@selector(onEvent:)]){
+        [self.delegate onEvent:data];
+    }
 }
 @end

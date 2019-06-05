@@ -38,10 +38,19 @@
     return view;
 }
 
+//for subclass
 - (void)configUI
 {
+    [self addTarget:self
+             action:@selector(bubbleTouchUpInside:)
+   forControlEvents:UIControlEventTouchUpInside];
+    
     self.backgroundColor = [UIColor blackColor];
     self.layer.cornerRadius = 4;
+}
+
+- (void)bubbleTouchUpInside:(id)sender{
+
 }
 
 - (void)refreshData:(YLIMMessageModel *)model

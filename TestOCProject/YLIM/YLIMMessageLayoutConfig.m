@@ -36,12 +36,12 @@
 
 - (CGPoint)nickNameMargin
 {
-    return CGPointMake(8.f, 0.f);
+    return CGPointMake(8.f, 8.f);
 }
 
 - (CGPoint)avatarMargin
 {
-    return CGPointMake(8.f, 0.f);
+    return CGPointMake(8.f, 8.f);
 }
 
 - (CGSize)avatarSize
@@ -49,19 +49,29 @@
     return CGSizeMake(40, 40);
 }
 
+//气泡距离cell底部距离
+- (CGFloat)bubbleToCellBottom{
+    return 15.f;
+}
+//气泡顶部距离
+- (CGFloat)bubbleTop{
+    return 8.f;
+}
+
 - (UIEdgeInsets)bubbleViewOutInsets
 {
-    CGFloat cellTopToBubbleTop = 8.f;
     CGFloat nickNameHeight = 20.f;
     CGFloat bubbleOriginX = 55.f;
-    CGFloat cellBubbleButtomToCellButtom = 8.f;
     if (self.showNickName) {
-        return UIEdgeInsetsMake(cellTopToBubbleTop + nickNameHeight, bubbleOriginX, cellBubbleButtomToCellButtom, 0);
+        //外边距 top = 汽泡顶部距离+姓名顶部+姓名高度
+        return UIEdgeInsetsMake(self.bubbleTop + nickNameHeight + self.nickNameMargin.y, bubbleOriginX, self.bubbleToCellBottom, 0);
     }else{
-        return UIEdgeInsetsMake(cellTopToBubbleTop, bubbleOriginX, cellBubbleButtomToCellButtom, 0);
+        //外边距 top = 汽泡顶部距离
+        return UIEdgeInsetsMake(self.bubbleTop, bubbleOriginX, self.bubbleToCellBottom, 0);
     }
 }
 
+//气泡内边距 可根据消息类型自定义
 - (UIEdgeInsets)bubbleViewInsets
 {
     if (self.model.messageType == YLMessageTypeText) {
@@ -75,6 +85,7 @@
     }
 }
 
+//内容大小 根据不同消息实际内容算出contentSize
 - (CGSize)contentSize
 {
     CGSize size = [self.bubbleSizeCache[@"size"] CGSizeValue];
@@ -93,9 +104,11 @@
     return size;
 }
 
+//cell高度 = 气泡外边距 + 气泡内边距 + 内容大小
 - (CGFloat)cellHeight {
     return self.bubbleViewInsets.top + self.bubbleViewInsets.bottom + self.contentSize.height + self.bubbleViewOutInsets.top + self.bubbleViewOutInsets.bottom;
 }
+
 
 - (CGSize)_calculateTextSize{
     CGFloat maxWidth = UIScreen.mainScreen.bounds.size.width - 150;

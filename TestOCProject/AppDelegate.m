@@ -44,6 +44,7 @@
 #import "NSDateFormatter+Convenience.h"
 #import "YLCollectionViewController.h"
 #import "YLSessionViewController.h"
+#import "YLGestureTestViewController.h"
 
 @interface AppDelegate ()
 
