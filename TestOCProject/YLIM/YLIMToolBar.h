@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)willShowEmoji:(YLIMToolBar *)view;
 - (void)willHiddenEmoji:(YLIMToolBar *)view;
+- (void)textViewFrameDidChange;
 
 @end
 

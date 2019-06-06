@@ -32,7 +32,9 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.textView.frame = CGRectMake(50, 5, self.yl_width - 100, self.yl_height - 10);
+    
+    CGPoint textViewMargin = CGPointMake(50, 8);
+    self.textView.frame = CGRectMake(textViewMargin.x, textViewMargin.y, self.yl_width - textViewMargin.x * 2, self.yl_height - textViewMargin.y * 2);
     
     self.addButton.yl_size = CGSizeMake(40, 40);
     self.addButton.bottom = self.yl_height - 5;
@@ -80,5 +82,14 @@
     self.addButton.selected = NO;
     [self.delegate willHiddenEmoji:self];
     return YES;
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    CGFloat toolBarHeight = textView.contentSize.height + 16;
+    self.yl_height = toolBarHeight > 50 ? toolBarHeight : 50;
+
+    [self setNeedsLayout];
+    [self.delegate textViewFrameDidChange];
 }
 @end

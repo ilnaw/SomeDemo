@@ -11,7 +11,8 @@
 static CGFloat const kEmojiHeight = 120;
 
 @interface YLIMKeyborad()<YLIMToolBarDelegate>
-@property (nonatomic,strong)UIView  *fakeEmojiView;
+@property (nonatomic, strong)UIView  *fakeEmojiView;
+@property (nonatomic, assign)CGFloat keyboradHeight;
 @end
 
 @implementation YLIMKeyborad
@@ -31,7 +32,7 @@ static CGFloat const kEmojiHeight = 120;
     [super layoutSubviews];
     self.toolBar.top = 0;
     self.toolBar.left = 0;
-    self.toolBar.yl_size = CGSizeMake(self.yl_width, 50);
+    self.toolBar.yl_size = CGSizeMake(self.yl_width, self.toolBar.yl_height);
     
     self.fakeEmojiView.top = self.toolBar.bottom;
     self.fakeEmojiView.left = 0;
@@ -41,6 +42,7 @@ static CGFloat const kEmojiHeight = 120;
 - (void)_configUI{
     self.toolBar = ({
         YLIMToolBar *bar = [YLIMToolBar new];
+        bar.yl_height = 50;
         bar.delegate = self;
         bar;
     });
@@ -75,6 +77,7 @@ static CGFloat const kEmojiHeight = 120;
 
 - (void)_keyboardWillShow:(NSNotification *)notification{
     CGRect keyboardRect = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    self.keyboradHeight = keyboardRect.size.height;
     [self _resetFrameKeyboradHeight:keyboardRect.size.height];
 }
 
@@ -82,18 +85,6 @@ static CGFloat const kEmojiHeight = 120;
     [self _resetFrameKeyboradHeight:0.f];
 }
 
-- (void)willShowEmoji:(YLIMToolBar *)view
-{
-    self.fakeEmojiView.hidden = NO;
-    [self.toolBar.textView resignFirstResponder];
-    [self _resetFrameEmojiShow:YES];
-}
-
-- (void)willHiddenEmoji:(YLIMToolBar *)view
-{
-    self.fakeEmojiView.hidden = YES;
-    [self _resetFrameEmojiShow:NO];
-}
 
 - (void)_resetFrameEmojiShow:(BOOL)emojiShowing{
     CGFloat superViewHeight = self.superview.bounds.size.height;
@@ -115,4 +106,24 @@ static CGFloat const kEmojiHeight = 120;
     CGFloat toolBarHeight = self.toolBar.yl_height;
     self.frame = CGRectMake(0, superViewHeight - keyboardHeight - toolBarHeight, screenWidth, toolBarHeight);
 }
+
+#pragma mark - delegate
+- (void)willShowEmoji:(YLIMToolBar *)view
+{
+    self.fakeEmojiView.hidden = NO;
+    [self.toolBar.textView resignFirstResponder];
+    [self _resetFrameEmojiShow:YES];
+}
+
+- (void)willHiddenEmoji:(YLIMToolBar *)view
+{
+    self.fakeEmojiView.hidden = YES;
+    [self _resetFrameEmojiShow:NO];
+}
+
+- (void)textViewFrameDidChange
+{
+    [self _resetFrameKeyboradHeight:self.keyboradHeight];
+}
+
 @end
