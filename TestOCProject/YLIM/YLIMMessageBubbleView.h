@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YLIMEvent.h"
 @class YLIMMessageModel;
 @class YLMessageModel;
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol YLIMMessageBubbleViewDelegate <NSObject>
 
-- (void)onEvent:(YLMessageModel *)data;
+- (void)catchEvent:(YLIMEvent *)event;
 
 @end
 

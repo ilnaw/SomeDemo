@@ -118,10 +118,10 @@
 }
 
 #pragma mark - bubbleDelegate
-- (void)onEvent:(YLMessageModel *)data
+- (void)catchEvent:(YLIMEvent *)event
 {
-    if([self.delegate respondsToSelector:@selector(onEvent:)]){
-        [self.delegate onEvent:data];
+    if([self.delegate respondsToSelector:@selector(catchEvent:)]){
+        [self.delegate catchEventCell:self event:event];
     }
 }
 @end

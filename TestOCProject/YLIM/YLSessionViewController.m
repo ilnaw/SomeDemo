@@ -10,20 +10,25 @@
 #import "YLIMMessageCell.h"
 #import "YLIMMessageModel.h"
 #import "YLMessageModel.h"
+#import "YLIMKeyborad.h"
 
-@interface YLSessionViewController ()<UITableViewDelegate,UITableViewDataSource,YLIMMessageDelegate>
+@interface YLSessionViewController ()<UITableViewDelegate,UITableViewDataSource,YLIMMessageDelegate,UIScrollViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *data;
+@property (nonatomic, strong)YLIMKeyborad *keyboradView;
 @end
 
 @implementation YLSessionViewController
+
+- (void)dealloc
+{
+    [self.keyboradView removeObserver:self forKeyPath:@"frame"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setTranslucent:NO];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self configData];
     
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -36,10 +41,43 @@
         tableView;
     });
     
+    self.keyboradView = ({
+        YLIMKeyborad *toolBar = [YLIMKeyborad new];
+        
+        toolBar;
+    });
+    
     [self.view addSubview:self.tableView];
+    [self.view addSubview:self.keyboradView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.top.left.right.equalTo(self.view);
+        make.bottom.equalTo(self.keyboradView.mas_top);
     }];
+    [self.keyboradView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.height.mas_equalTo(50);
+    }];
+    
+    [self configData];
+    [self _addObserve];
+}
+- (void)_addObserve{
+    [self.keyboradView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    if ([object isKindOfClass:YLIMKeyborad.class]) {
+        if ([keyPath isEqualToString:@"frame"]) {
+            //修改tableviewframe 和 offset
+            self.tableView.frame = CGRectMake(0, 0, self.view.yl_width, self.keyboradView.top);
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.data.count - 1 inSection:0];
+            [self.tableView scrollToRowAtIndexPath:indexPath
+                                  atScrollPosition:UITableViewScrollPositionBottom
+                                          animated:YES];
+        }
+    }
+
 }
 
 - (void)configData{
@@ -179,9 +217,15 @@
     YLIMMessageModel *model = self.data[indexPath.row];
     return model.layout.cellHeight;
 }
-- (void)onEvent:(YLMessageModel *)data
-{
-    NSLog(@"--------点击了");
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    if (self.keyboradView.isFirstResponder) {
+        [self.keyboradView resignFirstResponder];
+    }
+}
+
+- (void)catchEventCell:(YLIMMessageCell *)cell event:(YLIMEvent *)event{
+    
 }
 
 @end

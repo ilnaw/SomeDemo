@@ -88,6 +88,10 @@
 		776FE8E622A7CD510061DC11 /* WechatIMG3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E522A7CD500061DC11 /* WechatIMG3.jpeg */; };
 		776FE8E822A7CDCA0061DC11 /* WechatIMG5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */; };
 		776FE8EB22A7D2FF0061DC11 /* YLGestureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8EA22A7D2FF0061DC11 /* YLGestureTestViewController.m */; };
+		776FE8EE22A7D93D0061DC11 /* YLIMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8ED22A7D93D0061DC11 /* YLIMEvent.m */; };
+		776FE8F122A8A96F0061DC11 /* YLIMToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */; };
+		776FE8F422A8AE860061DC11 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F322A8AE860061DC11 /* UITextView+Placeholder.m */; };
+		776FE8F722A8BBAA0061DC11 /* YLIMKeyborad.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -294,6 +298,14 @@
 		776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG5.jpeg; sourceTree = "<group>"; };
 		776FE8E922A7D2FF0061DC11 /* YLGestureTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YLGestureTestViewController.h; path = TestOCProject/YLGestureTestViewController.h; sourceTree = SOURCE_ROOT; };
 		776FE8EA22A7D2FF0061DC11 /* YLGestureTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YLGestureTestViewController.m; path = TestOCProject/YLGestureTestViewController.m; sourceTree = SOURCE_ROOT; };
+		776FE8EC22A7D93D0061DC11 /* YLIMEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMEvent.h; sourceTree = "<group>"; };
+		776FE8ED22A7D93D0061DC11 /* YLIMEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMEvent.m; sourceTree = "<group>"; };
+		776FE8EF22A8A96F0061DC11 /* YLIMToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMToolBar.h; sourceTree = "<group>"; };
+		776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMToolBar.m; sourceTree = "<group>"; };
+		776FE8F222A8AE860061DC11 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		776FE8F322A8AE860061DC11 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		776FE8F522A8BBAA0061DC11 /* YLIMKeyborad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMKeyborad.h; sourceTree = "<group>"; };
+		776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMKeyborad.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -628,6 +640,8 @@
 		77026BB3229FB56D0065D7A1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				776FE8F222A8AE860061DC11 /* UITextView+Placeholder.h */,
+				776FE8F322A8AE860061DC11 /* UITextView+Placeholder.m */,
 				77026BB6229FB61A0065D7A1 /* NSDateFormatter+Convenience.h */,
 				77026BB7229FB61A0065D7A1 /* NSDateFormatter+Convenience.m */,
 				77026BBC22A0F9BD0065D7A1 /* UIView+DotBadge.h */,
@@ -657,10 +671,16 @@
 				77026BD022A621DD0065D7A1 /* YLIMMessageLayoutConfig.m */,
 				77026BD222A640810065D7A1 /* YLMessageModel.h */,
 				77026BD322A640810065D7A1 /* YLMessageModel.m */,
+				776FE8EC22A7D93D0061DC11 /* YLIMEvent.h */,
+				776FE8ED22A7D93D0061DC11 /* YLIMEvent.m */,
 				7768C7A322A760D8000CE543 /* YLIMConfig.h */,
 				7768C7A422A760D8000CE543 /* YLIMConfig.m */,
 				7768C7A622A765E4000CE543 /* YLSessionViewController.h */,
 				7768C7A722A765E4000CE543 /* YLSessionViewController.m */,
+				776FE8F522A8BBAA0061DC11 /* YLIMKeyborad.h */,
+				776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */,
+				776FE8EF22A8A96F0061DC11 /* YLIMToolBar.h */,
+				776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */,
 			);
 			path = YLIM;
 			sourceTree = "<group>";
@@ -902,6 +922,7 @@
 				7713F509228907C90009797D /* SnapViewController.m in Sources */,
 				775F540C226D964B00CFEE8A /* CopyModel.m in Sources */,
 				77BFB9DF228A5E6300B48949 /* UIButton+YLButtonLayoutType.m in Sources */,
+				776FE8EE22A7D93D0061DC11 /* YLIMEvent.m in Sources */,
 				A5702825225F004E00758F77 /* YLDateManager.m in Sources */,
 				77026BA2229E62CF0065D7A1 /* YLBlueView.m in Sources */,
 				7737699B22816067008DE8C1 /* YLWeekDestinyView.m in Sources */,
@@ -941,6 +962,7 @@
 				27A344EF2254A24600C0EFC7 /* RACViewModel.m in Sources */,
 				7768C7B122A78C1F000CE543 /* YLIMMessageRedPacketView.m in Sources */,
 				774EE3B8228BF63B00ABFA7F /* YLPopoverView.m in Sources */,
+				776FE8F422A8AE860061DC11 /* UITextView+Placeholder.m in Sources */,
 				77C9D88E2283D26F0022991E /* YLPlanBoradView.m in Sources */,
 				27A344EC2254A23100C0EFC7 /* RACViewController.m in Sources */,
 				7715DFA022802086000D58AF /* NSMutableArray+Queue_Stack.m in Sources */,
@@ -964,6 +986,8 @@
 				271F2A892239FB2A00A3580F /* main.m in Sources */,
 				77C9D88B2283C3E80022991E /* YLLayerViewController.m in Sources */,
 				27212E4A223F6E2100CA6E4C /* UITableViewCell+reuse.m in Sources */,
+				776FE8F122A8A96F0061DC11 /* YLIMToolBar.m in Sources */,
+				776FE8F722A8BBAA0061DC11 /* YLIMKeyborad.m in Sources */,
 				27D7A6792247A3BC009F69CF /* NextViewController.m in Sources */,
 				773F0D8E2264557700815D58 /* YLCustomDrawView.m in Sources */,
 				774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */,

@@ -49,8 +49,11 @@
 }
 
 - (void)bubbleTouchUpInside:(id)sender{
-    if ([self.delegate respondsToSelector:@selector(onEvent:)]) {
-        [self.delegate onEvent:self.model.message];
+    if ([self.delegate respondsToSelector:@selector(catchEvent:)]) {
+        YLIMEvent *event = [YLIMEvent alloc];
+        event.model = self.model.message;
+        event.eventName = YLIMEventNameTapContent;
+        [self.delegate catchEvent:event];
     }
 }
 @end
