@@ -29,7 +29,7 @@
     [super configUI];
     UIImageView *imageView = [UIImageView new];
     imageView.layer.masksToBounds = YES;
-    imageView.backgroundColor = [UIColor redColor];
+
     [self addSubview:imageView];
     self.redPacket = imageView;
 }
@@ -45,6 +45,13 @@
 - (void)refreshData:(YLIMMessageModel *)model
 {
     self.model = model;
+    if (model.layout.showLeft) {
+        self.redPacket.image = [[UIImage imageNamed:@"border"] resizableImageWithCapInsets:UIEdgeInsetsMake(30, 30, 30, 30)
+                                                                           resizingMode:UIImageResizingModeStretch];;
+    } else {
+        self.redPacket.image = [[UIImage imageNamed:@"hbr"] resizableImageWithCapInsets:UIEdgeInsetsMake(25, 5, 5, 8)
+                                                                         resizingMode:UIImageResizingModeStretch];
+    }
 }
 
 - (void)bubbleTouchUpInside:(id)sender{
