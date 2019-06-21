@@ -92,6 +92,8 @@
 		776FE8F122A8A96F0061DC11 /* YLIMToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */; };
 		776FE8F422A8AE860061DC11 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F322A8AE860061DC11 /* UITextView+Placeholder.m */; };
 		776FE8F722A8BBAA0061DC11 /* YLIMKeyborad.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */; };
+		7770559522BC6FF600AACC7C /* YLWeatherFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559422BC6FF600AACC7C /* YLWeatherFrameViewController.m */; };
+		7770559822BC709200AACC7C /* YLWeatherFrameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -307,6 +309,10 @@
 		776FE8F322A8AE860061DC11 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		776FE8F522A8BBAA0061DC11 /* YLIMKeyborad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMKeyborad.h; sourceTree = "<group>"; };
 		776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMKeyborad.m; sourceTree = "<group>"; };
+		7770559322BC6FF600AACC7C /* YLWeatherFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWeatherFrameViewController.h; sourceTree = "<group>"; };
+		7770559422BC6FF600AACC7C /* YLWeatherFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWeatherFrameViewController.m; sourceTree = "<group>"; };
+		7770559622BC709200AACC7C /* YLWeatherFrameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWeatherFrameTableViewCell.h; sourceTree = "<group>"; };
+		7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWeatherFrameTableViewCell.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -507,6 +513,7 @@
 				77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */,
 				774EE3B6228BF63B00ABFA7F /* YLPopoverView.h */,
 				774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */,
+				7770559222BC6FE100AACC7C /* YLWeatherFrameDemo */,
 				77026BC522A6080D0065D7A1 /* YLIM */,
 				77026BB3229FB56D0065D7A1 /* Extension */,
 				77026B99229E62800065D7A1 /* BaseViewTest */,
@@ -688,6 +695,17 @@
 				776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */,
 			);
 			path = YLIM;
+			sourceTree = "<group>";
+		};
+		7770559222BC6FE100AACC7C /* YLWeatherFrameDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7770559322BC6FF600AACC7C /* YLWeatherFrameViewController.h */,
+				7770559422BC6FF600AACC7C /* YLWeatherFrameViewController.m */,
+				7770559622BC709200AACC7C /* YLWeatherFrameTableViewCell.h */,
+				7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */,
+			);
+			path = YLWeatherFrameDemo;
 			sourceTree = "<group>";
 		};
 		77BFB9D3228A592900B48949 /* PopoverView */ = {
@@ -949,6 +967,7 @@
 				77E28BB322AF72F0007D98E3 /* UIView+Gradient.m in Sources */,
 				774EE3B1228ABA4B00ABFA7F /* YLCoinViewController.m in Sources */,
 				77026BBE22A0F9BD0065D7A1 /* UIView+DotBadge.m in Sources */,
+				7770559822BC709200AACC7C /* YLWeatherFrameTableViewCell.m in Sources */,
 				271883262249C59000046D86 /* WLTransitioning.m in Sources */,
 				7715DF9D22800FB4000D58AF /* AlertWindowVC.m in Sources */,
 				7737699E228162B6008DE8C1 /* YLCircelCountView.m in Sources */,
@@ -984,6 +1003,7 @@
 				A5702822225DE5AB00758F77 /* XibView.m in Sources */,
 				77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */,
 				271883292249CF7D00046D86 /* WLTransitioningController.m in Sources */,
+				7770559522BC6FF600AACC7C /* YLWeatherFrameViewController.m in Sources */,
 				77C9D8802282A80F0022991E /* YLDrawDestinyViewController.m in Sources */,
 				77026BD422A640810065D7A1 /* YLMessageModel.m in Sources */,
 				77026BB8229FB61A0065D7A1 /* NSDateFormatter+Convenience.m in Sources */,
