@@ -43,6 +43,7 @@
         YLWeatherFrameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:YLWeatherFrameTableViewCell.reuseid];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.3];
+        [cell data];
         return cell;
     }else{
         UITableViewCell *cell = UITableViewCell.new;

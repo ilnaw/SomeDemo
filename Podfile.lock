@@ -32,6 +32,7 @@ PODS:
   - UICountingLabel (1.4.1)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - YYAsyncLayer (1.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - FDFullscreenPopGesture
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - UICountingLabel
   - "UITableView+FDTemplateLayoutCell (~> 1.6)"
   - YYAsyncLayer
+  - YYText
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -60,6 +62,7 @@ SPEC REPOS:
     - UICountingLabel
     - "UITableView+FDTemplateLayoutCell"
     - YYAsyncLayer
+    - YYText
 
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
@@ -75,7 +78,8 @@ SPEC CHECKSUMS:
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0933d59c525f4b28b90363b15f13ed399cc2a458
+PODFILE CHECKSUM: eb702b453e51cee41c9e9da8b993e13e597f0ac0
 
 COCOAPODS: 1.6.1

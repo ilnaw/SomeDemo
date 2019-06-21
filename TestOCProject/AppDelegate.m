@@ -46,6 +46,8 @@
 #import "YLSessionViewController.h"
 #import "YLGestureTestViewController.h"
 #import "YLWeatherFrameViewController.h"
+#import "YLGradViewController.h"
+#import "YYTextViewController.h"
 
 @interface AppDelegate ()
 
@@ -103,7 +105,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YLWeatherFrameViewController *rac = [[YLWeatherFrameViewController alloc]init];
+    YYTextViewController *rac = [[YYTextViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     

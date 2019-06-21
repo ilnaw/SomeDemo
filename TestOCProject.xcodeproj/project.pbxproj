@@ -94,6 +94,9 @@
 		776FE8F722A8BBAA0061DC11 /* YLIMKeyborad.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FE8F622A8BBAA0061DC11 /* YLIMKeyborad.m */; };
 		7770559522BC6FF600AACC7C /* YLWeatherFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559422BC6FF600AACC7C /* YLWeatherFrameViewController.m */; };
 		7770559822BC709200AACC7C /* YLWeatherFrameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */; };
+		7770559B22BC83B900AACC7C /* YLGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559A22BC83B900AACC7C /* YLGradientLabel.m */; };
+		7770559E22BC89C600AACC7C /* YLGradViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559D22BC89C600AACC7C /* YLGradViewController.m */; };
+		777055A222BCB9C200AACC7C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777055A122BCB9C200AACC7C /* YYTextViewController.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -313,6 +316,12 @@
 		7770559422BC6FF600AACC7C /* YLWeatherFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWeatherFrameViewController.m; sourceTree = "<group>"; };
 		7770559622BC709200AACC7C /* YLWeatherFrameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWeatherFrameTableViewCell.h; sourceTree = "<group>"; };
 		7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWeatherFrameTableViewCell.m; sourceTree = "<group>"; };
+		7770559922BC83B900AACC7C /* YLGradientLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLGradientLabel.h; sourceTree = "<group>"; };
+		7770559A22BC83B900AACC7C /* YLGradientLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGradientLabel.m; sourceTree = "<group>"; };
+		7770559C22BC89C600AACC7C /* YLGradViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLGradViewController.h; sourceTree = "<group>"; };
+		7770559D22BC89C600AACC7C /* YLGradViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGradViewController.m; sourceTree = "<group>"; };
+		777055A022BCB9C200AACC7C /* YYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextViewController.h; sourceTree = "<group>"; };
+		777055A122BCB9C200AACC7C /* YYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextViewController.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -505,6 +514,10 @@
 				7737699D228162B6008DE8C1 /* YLCircelCountView.m */,
 				77C9D88C2283D26F0022991E /* YLPlanBoradView.h */,
 				77C9D88D2283D26F0022991E /* YLPlanBoradView.m */,
+				7770559922BC83B900AACC7C /* YLGradientLabel.h */,
+				7770559A22BC83B900AACC7C /* YLGradientLabel.m */,
+				7770559C22BC89C600AACC7C /* YLGradViewController.h */,
+				7770559D22BC89C600AACC7C /* YLGradViewController.m */,
 				27A344ED2254A24600C0EFC7 /* RACViewModel.h */,
 				27A344EE2254A24600C0EFC7 /* RACViewModel.m */,
 				775F540A226D964B00CFEE8A /* CopyModel.h */,
@@ -513,6 +526,7 @@
 				77BFB9DE228A5E6300B48949 /* UIButton+YLButtonLayoutType.m */,
 				774EE3B6228BF63B00ABFA7F /* YLPopoverView.h */,
 				774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */,
+				7770559F22BCB9AC00AACC7C /* YYTextDemo */,
 				7770559222BC6FE100AACC7C /* YLWeatherFrameDemo */,
 				77026BC522A6080D0065D7A1 /* YLIM */,
 				77026BB3229FB56D0065D7A1 /* Extension */,
@@ -706,6 +720,15 @@
 				7770559722BC709200AACC7C /* YLWeatherFrameTableViewCell.m */,
 			);
 			path = YLWeatherFrameDemo;
+			sourceTree = "<group>";
+		};
+		7770559F22BCB9AC00AACC7C /* YYTextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				777055A022BCB9C200AACC7C /* YYTextViewController.h */,
+				777055A122BCB9C200AACC7C /* YYTextViewController.m */,
+			);
+			path = YYTextDemo;
 			sourceTree = "<group>";
 		};
 		77BFB9D3228A592900B48949 /* PopoverView */ = {
@@ -977,6 +1000,7 @@
 				77026BD122A621DD0065D7A1 /* YLIMMessageLayoutConfig.m in Sources */,
 				773F0D882264298100815D58 /* DrawViewController.m in Sources */,
 				A5F7FCE3225C47E800D763F7 /* YLExampleViewController.m in Sources */,
+				7770559E22BC89C600AACC7C /* YLGradViewController.m in Sources */,
 				7715DFA622811E3B000D58AF /* EmptyView.m in Sources */,
 				271883222249C3CF00046D86 /* BottomViewController.m in Sources */,
 				A570281E225DE59700758F77 /* XibViewController.m in Sources */,
@@ -1037,10 +1061,12 @@
 				77026BCE22A6212A0065D7A1 /* YLIMMessageModel.m in Sources */,
 				A5F7FCE0225C3D0B00D763F7 /* YLNotificationType.m in Sources */,
 				2715F30A2248B88900164D88 /* PGTwoViewController.m in Sources */,
+				777055A222BCB9C200AACC7C /* YYTextViewController.m in Sources */,
 				7768C7A522A760D8000CE543 /* YLIMConfig.m in Sources */,
 				77C9D87D228272790022991E /* ScrollOffsetViewController.m in Sources */,
 				271F2A7B2239FB2800A3580F /* AppDelegate.m in Sources */,
 				7768C7A822A765E4000CE543 /* YLSessionViewController.m in Sources */,
+				7770559B22BC83B900AACC7C /* YLGradientLabel.m in Sources */,
 				77C9D8872283B8840022991E /* YLDrawXibViewController.m in Sources */,
 				77C6BC902275977E007AE802 /* AmericanEatViewController.m in Sources */,
 				7737699522814F38008DE8C1 /* AttributeStrView.m in Sources */,

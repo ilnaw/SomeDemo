@@ -10,17 +10,30 @@
 
 @implementation UIView (Gradient)
 
+- (CAGradientLayer *)beforeLayer{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setBeforeLayer:(CAGradientLayer *)beforeLayer{
+    objc_setAssociatedObject(self, @selector(beforeLayer), beforeLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 - (void)gradientColors:(NSArray *)colors
             startPoint:(CGPoint)startPoint
               endPoint:(CGPoint)endPoint{
+    if (self.beforeLayer) {
+        [self.beforeLayer removeFromSuperlayer];
+    }
     
-    CAGradientLayer* gradientLayer1 = [CAGradientLayer layer];
-    gradientLayer1.frame = self.frame;
-    gradientLayer1.colors = colors;
-    gradientLayer1.startPoint = startPoint;
-    gradientLayer1.endPoint = endPoint;
-    [self.superview.layer addSublayer:gradientLayer1];
-    gradientLayer1.mask = self.layer;
-    self.frame = gradientLayer1.bounds;
+    CAGradientLayer* gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.frame;
+    gradientLayer.colors = colors;
+    gradientLayer.startPoint = startPoint;
+    gradientLayer.endPoint = endPoint;
+    [self.superview.layer addSublayer:gradientLayer];
+    gradientLayer.mask = self.layer;
+    self.frame = gradientLayer.bounds;
+    
+    self.beforeLayer = gradientLayer;
 }
 @end
