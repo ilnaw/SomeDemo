@@ -7,6 +7,7 @@
 //
 
 #import "YYTextViewController.h"
+#import "MGJRouter.h"
 #import "YYText.h"
 
 @interface YYTextViewController ()
@@ -18,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [MGJRouter registerURLPattern:@"youloft.419805549://mainTab/:query" toHandler:^(NSDictionary *routerParameters) {
+        NSLog(@"--------%@",routerParameters[@"query"]);
+        NSLog(@"--------%@",routerParameters);
+    }];
+    
+    [MGJRouter openURL:@"youloft.419805549://mainTab/detail?index=1&name=wanli"];
     
     NSString *html = @"<a href=\"https://www.baidu.com/?tn=48021271_19_hao_pg\">你好</a><p>123123123123123123123123123123123123123123123123123</p>";
     
@@ -49,7 +57,7 @@
         if ([attrs.allKeys containsObject:NSLinkAttributeName]) {
             YYTextHighlight *light = [YYTextHighlight new];
             light.tapAction = ^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
-                
+                NSLog(@"---------%@",text.yy_attributes[NSLinkAttributeName]);
             };
             [attr yy_setTextHighlight:light range:range];
         }

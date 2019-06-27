@@ -49,10 +49,10 @@
     [self.label setNeedsDisplay];
 }
 
-//- (void)setFrame:(CGRect)frame
-//{
-//    frame.origin.x = 100;
-//    frame.size.width = UIScreen.mainScreen.bounds.size.width - 100;
-//    [super setFrame:frame];
-//}
+- (void)setFrame:(CGRect)frame
+{
+    frame.origin.x = 100;
+    frame.size.width = UIScreen.mainScreen.bounds.size.width - 100;
+    [super setFrame:frame];
+}
 @end

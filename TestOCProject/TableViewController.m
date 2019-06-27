@@ -122,6 +122,7 @@
     return _nameLabel;
 }
 
+
 - (UIButton *)settingButton
 {
     if (!_settingButton) {
@@ -137,10 +138,51 @@
 
 @end
 
+@interface ExpandCell : UITableViewCell
+@property (nonatomic, strong)UIView *view22;
+@end
+
+@implementation ExpandCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        UIView *view1 = UIView.new;
+        view1.backgroundColor = [UIColor redColor];
+        [self addSubview:view1];
+        
+        UIView *view2 = UIView.new;
+        view2.backgroundColor = [UIColor blueColor];
+        [self addSubview:view2];
+        self.view22 = view2;
+        
+        [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.right.equalTo(self);
+            make.height.mas_equalTo(50);
+        }];
+        [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(view1.mas_bottom);
+            make.left.right.equalTo(self);
+            make.height.mas_equalTo(50);
+        }];
+    }
+    return self;
+}
+
+- (void)show:(BOOL)show{
+    self.view22.hidden = !show;
+}
+
+@end
+
 @interface TableViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property (strong, nonatomic)UITableView  *tableView;
 @property (strong, nonatomic)HeaderView  *headerView;
 @property (strong, nonatomic)CustomNavigationBar *navigationBar;
+@property (strong, nonatomic)NSMutableArray *selectedArray;
 @end
 
 @implementation TableViewController
@@ -157,6 +199,7 @@
     
     self.navigationItem.title = @"测试";
     self.fd_prefersNavigationBarHidden = true;
+    self.selectedArray = @[].mutableCopy;
 }
 - (void)viewDidLayoutSubviews
 {
@@ -166,16 +209,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:true];
-    NextViewController *vc = [[NextViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:true];
+//    [tableView deselectRowAtIndexPath:indexPath animated:true];
+//    NextViewController *vc = [[NextViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:true];
+    if ([self.selectedArray containsObject:indexPath]) {
+        [self.selectedArray removeObject:indexPath];
+    }else{
+        [self.selectedArray addObject:indexPath];
+    }
+    [self.tableView beginUpdates];
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView endUpdates];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:UITableViewCell.reuseid forIndexPath:indexPath];
-    
-    cell.textLabel.text = @"测试问题";
+    ExpandCell *cell = [tableView dequeueReusableCellWithIdentifier:ExpandCell.reuseid forIndexPath:indexPath];
+    [cell show:[self.selectedArray containsObject:indexPath]];
     return cell;
 }
 
@@ -189,13 +239,21 @@
     [self.navigationBar attachToScrollViewDidScroll:scrollView];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.selectedArray containsObject:indexPath]) {
+        return 100;
+    }
+    return 50;
+}
+
 - (UITableView *)tableView
 {
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:UITableViewCell.reuseid];
+        [_tableView registerClass:ExpandCell.class forCellReuseIdentifier:ExpandCell.reuseid];
     }
     return _tableView;
 }

@@ -13,6 +13,7 @@ def pods
    pod 'UICountingLabel'
    pod 'TZImagePickerController'
    pod 'YYText'
+   pod 'MGJRouter', '~>0.9.0'
 end
 
 target 'TestOCProject' do

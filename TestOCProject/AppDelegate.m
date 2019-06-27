@@ -48,6 +48,7 @@
 #import "YLWeatherFrameViewController.h"
 #import "YLGradViewController.h"
 #import "YYTextViewController.h"
+#import "YLMomentHeaderReuseTestVC.h"
 
 @interface AppDelegate ()
 
@@ -105,7 +106,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YYTextViewController *rac = [[YYTextViewController alloc]init];
+    YLMomentHeaderReuseTestVC *rac = [[YLMomentHeaderReuseTestVC alloc]init];
     
     NSLog(@"=========%@",rac);
     
