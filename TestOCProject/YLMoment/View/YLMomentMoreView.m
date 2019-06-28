@@ -113,7 +113,7 @@
     if (self.isShowing) {
         return;
     }
-    self.isShowing = YES;
+    self.showing = YES;
     
     if (!animation) {
         self.yl_width = 140;
@@ -145,7 +145,7 @@
     }
     
     if (!animation) {
-        self.isShowing = NO;
+        self.showing = NO;
         self.frameX = self.frameX + self.yl_width;
         self.yl_width = 0;
         return;
@@ -161,7 +161,7 @@
                                 self.yl_width = 0;
                                 self.effectView.yl_width = self.yl_width;
                             } completion:^(BOOL finished) {
-                                 self.isShowing = NO;
+                                 self.showing = NO;
                             }];
     });
 }

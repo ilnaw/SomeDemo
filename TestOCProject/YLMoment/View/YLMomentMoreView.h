@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLMomentMoreView : UIView
 /** 是否展示 */
-@property (nonatomic, assign)BOOL isShowing;
+@property (nonatomic, assign, getter = isShowing)BOOL showing;
 /** 点赞点击回调 */
 @property (nonatomic, copy)void (^likeClickedCallback)(YLMomentMoreView *view);
 /** 评论点击回调 */

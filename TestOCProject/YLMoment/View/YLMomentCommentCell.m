@@ -21,7 +21,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
         self.commentContent = ({
             UILabel *label = UILabel.new;

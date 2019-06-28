@@ -86,6 +86,7 @@
 		7742804722C4C75F00B35262 /* YLMomentEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742804622C4C75F00B35262 /* YLMomentEvent.m */; };
 		7742804A22C4CF0000B35262 /* YLMomentFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742804922C4CF0000B35262 /* YLMomentFooterView.m */; };
 		7742805322C5AC1500B35262 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742805222C5AC1500B35262 /* GuideViewController.m */; };
+		7742805722C5E95C00B35262 /* MathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742805622C5E95C00B35262 /* MathViewController.m */; };
 		774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */; };
 		774EE3B1228ABA4B00ABFA7F /* YLCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3B0228ABA4B00ABFA7F /* YLCoinViewController.m */; };
 		774EE3B8228BF63B00ABFA7F /* YLPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774EE3B7228BF63B00ABFA7F /* YLPopoverView.m */; };
@@ -101,6 +102,7 @@
 		7768C7AB22A76A92000CE543 /* YLIMMessageImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7768C7AA22A76A92000CE543 /* YLIMMessageImageView.m */; };
 		7768C7AE22A76AA7000CE543 /* YLIMMessageAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7768C7AD22A76AA7000CE543 /* YLIMMessageAnswerView.m */; };
 		7768C7B122A78C1F000CE543 /* YLIMMessageRedPacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7768C7B022A78C1F000CE543 /* YLIMMessageRedPacketView.m */; };
+		7769358022C61E2500B19703 /* YLIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7769357F22C61E2500B19703 /* YLIMManager.m */; };
 		776FE8E422A7CD4D0061DC11 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E322A7CD4C0061DC11 /* WechatIMG4.jpeg */; };
 		776FE8E622A7CD510061DC11 /* WechatIMG3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E522A7CD500061DC11 /* WechatIMG3.jpeg */; };
 		776FE8E822A7CDCA0061DC11 /* WechatIMG5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */; };
@@ -320,6 +322,8 @@
 		7742804922C4CF0000B35262 /* YLMomentFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMomentFooterView.m; sourceTree = "<group>"; };
 		7742805122C5AC1500B35262 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		7742805222C5AC1500B35262 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		7742805522C5E95C00B35262 /* MathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathViewController.h; sourceTree = "<group>"; };
+		7742805622C5E95C00B35262 /* MathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathViewController.m; sourceTree = "<group>"; };
 		774EE3AC228ABA3200ABFA7F /* YLCoinProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCoinProgressView.h; sourceTree = "<group>"; };
 		774EE3AD228ABA3200ABFA7F /* YLCoinProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCoinProgressView.m; sourceTree = "<group>"; };
 		774EE3AF228ABA4B00ABFA7F /* YLCoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCoinViewController.h; sourceTree = "<group>"; };
@@ -350,6 +354,8 @@
 		7768C7AD22A76AA7000CE543 /* YLIMMessageAnswerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMMessageAnswerView.m; sourceTree = "<group>"; };
 		7768C7AF22A78C1F000CE543 /* YLIMMessageRedPacketView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMMessageRedPacketView.h; sourceTree = "<group>"; };
 		7768C7B022A78C1F000CE543 /* YLIMMessageRedPacketView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMMessageRedPacketView.m; sourceTree = "<group>"; };
+		7769357E22C61E2500B19703 /* YLIMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIMManager.h; sourceTree = "<group>"; };
+		7769357F22C61E2500B19703 /* YLIMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIMManager.m; sourceTree = "<group>"; };
 		776FE8E322A7CD4C0061DC11 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
 		776FE8E522A7CD500061DC11 /* WechatIMG3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG3.jpeg; sourceTree = "<group>"; };
 		776FE8E722A7CDC90061DC11 /* WechatIMG5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG5.jpeg; sourceTree = "<group>"; };
@@ -522,8 +528,9 @@
 				7742804B22C5A92C00B35262 /* Draw */,
 				7742804E22C5AA3E00B35262 /* AlertWindow-popManager */,
 				7742805022C5AB2C00B35262 /* wnl效果 */,
-				A5702823225F004E00758F77 /* YLDateManager.h */,
+				7742805422C5E93400B35262 /* 算法 */,
 				A5702824225F004E00758F77 /* YLDateManager.m */,
+				A5702823225F004E00758F77 /* YLDateManager.h */,
 				27212E44223F6CE000CA6E4C /* TableViewCell.h */,
 				27212E45223F6CE000CA6E4C /* TableViewCell.m */,
 				27212E47223F6DC700CA6E4C /* ViewReusableProtocol.h */,
@@ -842,6 +849,17 @@
 			path = "wnl效果";
 			sourceTree = "<group>";
 		};
+		7742805422C5E93400B35262 /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				7742805522C5E95C00B35262 /* MathViewController.h */,
+				7742805622C5E95C00B35262 /* MathViewController.m */,
+				7769357E22C61E2500B19703 /* YLIMManager.h */,
+				7769357F22C61E2500B19703 /* YLIMManager.m */,
+			);
+			path = "算法";
+			sourceTree = "<group>";
+		};
 		7770559222BC6FE100AACC7C /* YLWeatherFrameDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1123,6 +1141,7 @@
 				271F2A7E2239FB2800A3580F /* ViewController.m in Sources */,
 				2715F3072248B87300164D88 /* PGOneViewController.m in Sources */,
 				77026BA5229E651C0065D7A1 /* YLBViewController.m in Sources */,
+				7742805722C5E95C00B35262 /* MathViewController.m in Sources */,
 				7742802722C3531300B35262 /* YLAnimationButton.m in Sources */,
 				7715DF94227FE0B3000D58AF /* UIView+WXFrame.m in Sources */,
 				2715F3042248B84200164D88 /* PageViewController.m in Sources */,
@@ -1147,6 +1166,7 @@
 				271883222249C3CF00046D86 /* BottomViewController.m in Sources */,
 				7742804122C4C3C600B35262 /* YLMomentVideo.m in Sources */,
 				A570281E225DE59700758F77 /* XibViewController.m in Sources */,
+				7769358022C61E2500B19703 /* YLIMManager.m in Sources */,
 				A5BF097C225C5F9900C02A81 /* YLStaticViewController.m in Sources */,
 				77C6BC87227596F7007AE802 /* EatViewController.m in Sources */,
 				77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */,
