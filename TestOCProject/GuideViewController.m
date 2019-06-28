@@ -34,6 +34,13 @@
     [self addCell:@"渐变label测试" class:@"YLGradViewController"];
     [self addCell:@"scrollView联动的x一些动画" class:@"ScrollOffsetViewController"];
     [self addCell:@"无限切换例子" class:@"FakeScrollViewController"];
+    [self addCell:@"staticTableView" class:@"YLStaticViewController"];
+    [self addCell:@"masonry1" class:@"YLMasonryViewController"];
+    [self addCell:@"masonry自适应和截图动画" class:@"SecondMasonryViewController"];
+    [self addCell:@"画图" class:@"YLLayerViewController"];
+    [self addCell:@"drawWithXIb" class:@"YLDrawXibViewController"];
+    [self addCell:@"AS_OC" class:@"AsyncViewController"];
+    [self addCell:@"按钮位置" class:@"ButtonTypeViewController"];
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {

@@ -43,7 +43,7 @@
         label;
     });
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"点击" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(updateLayout:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];

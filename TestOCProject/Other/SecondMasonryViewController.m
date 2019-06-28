@@ -344,7 +344,7 @@
         make.left.right.equalTo(content).insets(UIEdgeInsetsMake(0, 20, 0, 20));
         make.top.equalTo(container.mas_bottom).offset(30);
         make.bottom.equalTo(content.mas_bottom).offset(-30);
-        make.height.equalTo(@(1000));
+        make.height.equalTo(@(300));
     }];
     
     self.content = content;
