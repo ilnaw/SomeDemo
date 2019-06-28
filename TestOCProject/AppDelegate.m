@@ -49,6 +49,7 @@
 #import "YLGradViewController.h"
 #import "YYTextViewController.h"
 #import "YLMomentHeaderReuseTestVC.h"
+#import "GuideViewController.h"
 
 @interface AppDelegate ()
 
@@ -106,7 +107,7 @@
     NSLog(@"--------ceilf=%ld",(NSInteger)ceilf(4.0/3));
 
     
-    YLMomentHeaderReuseTestVC *rac = [[YLMomentHeaderReuseTestVC alloc]init];
+    GuideViewController *rac = [[GuideViewController alloc]init];
     
     NSLog(@"=========%@",rac);
     

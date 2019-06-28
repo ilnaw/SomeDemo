@@ -27,7 +27,7 @@
         make.top.left.right.equalTo(self.view);
         make.height.mas_equalTo(300);
     }];
-    drawView.scores = @[@(50),@(50),@(50),@(50),@(50),@(50),@(50)];
+    drawView.scores = @[@(10),@(30),@(50),@(40),@(90),@(60),@(35)];
     [drawView setNeedsDisplay];
     
 }

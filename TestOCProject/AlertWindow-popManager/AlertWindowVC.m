@@ -41,9 +41,9 @@
         [self presentViewController:alert animated:true completion:nil];
     };
     
-//    [[YLPopQueueManager shared]addTask:task1];
-//    [[YLPopQueueManager shared]addTask:task2 priority:YLPopTaskPriorityLow];
-//    [[YLPopQueueManager shared]addTask:task3 priority:YLPopTaskPriorityHigh];
+    [[YLPopQueueManager shared]addTask:task1];
+    [[YLPopQueueManager shared]addTask:task2 priority:YLPopTaskPriorityLow];
+    [[YLPopQueueManager shared]addTask:task3 priority:YLPopTaskPriorityHigh];
     
 //    [[YLPopQueueManager shared] startTaskQueue];
 //    EmptyView *view = [[EmptyView alloc]init];
@@ -54,35 +54,35 @@
 //        make.height.equalTo(@(160));
 //    }];
     
-    AttributeStrView *view = [[AttributeStrView alloc]init];
-    [self.view addSubview:view];
-    CGFloat height = ceilf([view.contentLabel.attributedText boundingRectWithSize:CGSizeMake(UIScreen.mainScreen.bounds.size.width - 20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size.height);
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self.view);
-        make.top.equalTo(@(64));
-        make.height.mas_equalTo(height);
-    }];
-    
-//    YLCircelCountView *view = [YLCircelCountView viewWithCountDown:10];
+//    AttributeStrView *view = [[AttributeStrView alloc]init];
 //    [self.view addSubview:view];
+//    CGFloat height = ceilf([view.contentLabel.attributedText boundingRectWithSize:CGSizeMake(UIScreen.mainScreen.bounds.size.width - 20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size.height);
 //    [view mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.equalTo(self.view);
 //        make.top.equalTo(@(64));
-//        make.height.mas_equalTo(100);
+//        make.height.mas_equalTo(height);
 //    }];
-//    [view start];
-//    _countView = view;
+    
+    YLCircelCountView *view = [YLCircelCountView viewWithCountDown:10];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(@(64));
+        make.height.mas_equalTo(100);
+    }];
+    [view start];
+    _countView = view;
 //
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [button setTitle:@"button" forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:button];
-//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.countView.mas_bottom).offset(10);
-//        make.centerX.equalTo(self.view);
-//        make.size.mas_equalTo(CGSizeMake(100, 30));
-//    }];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitle:@"button" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.countView.mas_bottom).offset(10);
+        make.centerX.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(100, 30));
+    }];
 }
 
 - (void)buttonClicked:(UIButton *)sender
