@@ -26,11 +26,11 @@
     [self addCell:@"IM" class:@"YLSessionViewController"];
     [self addCell:@"朋友圈" class:@"YLMomentHeaderReuseTestVC"];
     [self addCell:@"scrollView联动" class:@"MainViewController"];
-    [self addCell:@"万年历天气结构" class:@"YLWeatherFrameViewController"];
+    [self addCell:@"历天气结构" class:@"YLWeatherFrameViewController"];
     [self addCell:@"YYText_autoLayout例子" class:@"YYTextViewController"];
     [self addCell:@"弹窗优先级控制器" class:@"AlertWindowVC"];
-    [self addCell:@"万年历运势图" class:@"YLDrawDestinyViewController"];
-    [self addCell:@"万年历金币" class:@"YLCoinViewController"];
+    [self addCell:@"历运势图" class:@"YLDrawDestinyViewController"];
+    [self addCell:@"历金币" class:@"YLCoinViewController"];
     [self addCell:@"渐变label测试" class:@"YLGradViewController"];
     [self addCell:@"scrollView联动的x一些动画" class:@"ScrollOffsetViewController"];
     [self addCell:@"无限切换例子" class:@"FakeScrollViewController"];
