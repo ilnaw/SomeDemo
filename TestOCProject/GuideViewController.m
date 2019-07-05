@@ -23,6 +23,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    [self addCell:@"竖直跑马灯" class:@"YLVerticalLoopVC"];
     [self addCell:@"math" class:@"MathViewController"];
     [self addCell:@"IM" class:@"YLSessionViewController"];
     [self addCell:@"朋友圈" class:@"YLMomentHeaderReuseTestVC"];

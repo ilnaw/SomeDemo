@@ -37,11 +37,11 @@
 }
 
 - (void)_sendMessage{
-    if (![[YLIMManager shared] canSendTextBySendSpacing:3
-                                           timeInterval:2
-                                              limitTime:3]) {
-        NSLog(@"-----不能发送");
-    }
+//    if (![[YLIMManager shared] canSendTextBySendSpacing:3
+//                                           timeInterval:2
+//                                              limitTime:3]) {
+//        NSLog(@"-----不能发送");
+//    }
 }
 
 - (void)_mathTwoSum:(NSArray <NSNumber *>*)array target:(NSInteger)target{

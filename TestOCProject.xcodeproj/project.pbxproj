@@ -133,6 +133,8 @@
 		77C9D88B2283C3E80022991E /* YLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D88A2283C3E80022991E /* YLLayerViewController.m */; };
 		77C9D88E2283D26F0022991E /* YLPlanBoradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D88D2283D26F0022991E /* YLPlanBoradView.m */; };
 		77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D8902284238E0022991E /* FakeScrollViewController.m */; };
+		77D0E67C22CEEB3A006A51F0 /* YLVerticalLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */; };
+		77D0E67F22CEEB51006A51F0 /* YLVerticalLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */; };
 		77E28BB322AF72F0007D98E3 /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E28BB122AF72F0007D98E3 /* UIView+Gradient.m */; };
 		A570281E225DE59700758F77 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A570281C225DE59700758F77 /* XibViewController.m */; };
 		A570281F225DE59700758F77 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A570281D225DE59700758F77 /* XibViewController.xib */; };
@@ -413,6 +415,10 @@
 		77C9D88F2284238E0022991E /* FakeScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeScrollViewController.h; sourceTree = "<group>"; };
 		77C9D8902284238E0022991E /* FakeScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeScrollViewController.m; sourceTree = "<group>"; };
 		77CCFECB229BD801005C6327 /* ScrollViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewProtocol.h; sourceTree = "<group>"; };
+		77D0E67A22CEEB3A006A51F0 /* YLVerticalLoopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVerticalLoopView.h; sourceTree = "<group>"; };
+		77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVerticalLoopView.m; sourceTree = "<group>"; };
+		77D0E67D22CEEB51006A51F0 /* YLVerticalLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVerticalLoopVC.h; sourceTree = "<group>"; };
+		77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVerticalLoopVC.m; sourceTree = "<group>"; };
 		77E28BB122AF72F0007D98E3 /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		77E28BB222AF72F0007D98E3 /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
 		A570281B225DE59700758F77 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
@@ -845,6 +851,10 @@
 				271883212249C3CF00046D86 /* BottomViewController.m */,
 				2715F311224904BB00164D88 /* BaseScrollView.h */,
 				2715F312224904BB00164D88 /* BaseScrollView.m */,
+				77D0E67A22CEEB3A006A51F0 /* YLVerticalLoopView.h */,
+				77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */,
+				77D0E67D22CEEB51006A51F0 /* YLVerticalLoopVC.h */,
+				77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */,
 			);
 			path = "wnl效果";
 			sourceTree = "<group>";
@@ -1135,6 +1145,7 @@
 				A5702828225F123C00758F77 /* NSString+Percent.m in Sources */,
 				A5F7FCDD225C3A7E00D763F7 /* APNSManager.m in Sources */,
 				775F5426226F1C3B00CFEE8A /* Tclass.m in Sources */,
+				77D0E67F22CEEB51006A51F0 /* YLVerticalLoopVC.m in Sources */,
 				27219F2622432822006B5D34 /* UIViewController+ImagePicker.m in Sources */,
 				7719930222C3078600227997 /* YLBasicTableViewViewController.m in Sources */,
 				775F5403226D8B5F00CFEE8A /* NSArray+Blocks.m in Sources */,
@@ -1228,6 +1239,7 @@
 				77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */,
 				77026BCB22A615F10065D7A1 /* YLIMMessageBubbleView.m in Sources */,
 				77026BCE22A6212A0065D7A1 /* YLIMMessageModel.m in Sources */,
+				77D0E67C22CEEB3A006A51F0 /* YLVerticalLoopView.m in Sources */,
 				A5F7FCE0225C3D0B00D763F7 /* YLNotificationType.m in Sources */,
 				2715F30A2248B88900164D88 /* PGTwoViewController.m in Sources */,
 				777055A222BCB9C200AACC7C /* YYTextViewController.m in Sources */,
