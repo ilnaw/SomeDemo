@@ -14,6 +14,7 @@ def pods
    pod 'TZImagePickerController'
    pod 'YYText'
    pod 'MGJRouter', '~>0.9.0'
+   pod 'SDCycleScrollView','>= 1.80'
 end
 
 target 'TestOCProject' do

@@ -135,6 +135,7 @@
 		77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D8902284238E0022991E /* FakeScrollViewController.m */; };
 		77D0E67C22CEEB3A006A51F0 /* YLVerticalLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */; };
 		77D0E67F22CEEB51006A51F0 /* YLVerticalLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */; };
+		77D0E68222CF2862006A51F0 /* YLPreWarningLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0E68122CF2862006A51F0 /* YLPreWarningLoopView.m */; };
 		77E28BB322AF72F0007D98E3 /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E28BB122AF72F0007D98E3 /* UIView+Gradient.m */; };
 		A570281E225DE59700758F77 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A570281C225DE59700758F77 /* XibViewController.m */; };
 		A570281F225DE59700758F77 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A570281D225DE59700758F77 /* XibViewController.xib */; };
@@ -419,6 +420,8 @@
 		77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVerticalLoopView.m; sourceTree = "<group>"; };
 		77D0E67D22CEEB51006A51F0 /* YLVerticalLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVerticalLoopVC.h; sourceTree = "<group>"; };
 		77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVerticalLoopVC.m; sourceTree = "<group>"; };
+		77D0E68022CF2862006A51F0 /* YLPreWarningLoopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPreWarningLoopView.h; sourceTree = "<group>"; };
+		77D0E68122CF2862006A51F0 /* YLPreWarningLoopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPreWarningLoopView.m; sourceTree = "<group>"; };
 		77E28BB122AF72F0007D98E3 /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		77E28BB222AF72F0007D98E3 /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
 		A570281B225DE59700758F77 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
@@ -855,6 +858,8 @@
 				77D0E67B22CEEB3A006A51F0 /* YLVerticalLoopView.m */,
 				77D0E67D22CEEB51006A51F0 /* YLVerticalLoopVC.h */,
 				77D0E67E22CEEB51006A51F0 /* YLVerticalLoopVC.m */,
+				77D0E68022CF2862006A51F0 /* YLPreWarningLoopView.h */,
+				77D0E68122CF2862006A51F0 /* YLPreWarningLoopView.m */,
 			);
 			path = "wnl效果";
 			sourceTree = "<group>";
@@ -1144,6 +1149,7 @@
 				77026BBB22A0D0200065D7A1 /* YLShapeView.m in Sources */,
 				A5702828225F123C00758F77 /* NSString+Percent.m in Sources */,
 				A5F7FCDD225C3A7E00D763F7 /* APNSManager.m in Sources */,
+				77D0E68222CF2862006A51F0 /* YLPreWarningLoopView.m in Sources */,
 				775F5426226F1C3B00CFEE8A /* Tclass.m in Sources */,
 				77D0E67F22CEEB51006A51F0 /* YLVerticalLoopVC.m in Sources */,
 				27219F2622432822006B5D34 /* UIViewController+ImagePicker.m in Sources */,
