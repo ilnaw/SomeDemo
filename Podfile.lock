@@ -3,6 +3,7 @@ PODS:
   - Masonry (1.1.0)
   - MGJRouter (0.9.3)
   - MJRefresh (3.1.15.7)
+  - PayCardsRecognizer (1.1.4)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Masonry
   - MGJRouter (~> 0.9.0)
   - MJRefresh (~> 3.1.15.7)
+  - PayCardsRecognizer
   - ReactiveObjC
   - SDCycleScrollView (>= 1.80)
   - SDWebImage (~> 5.0.0)
@@ -58,6 +60,7 @@ SPEC REPOS:
     - Masonry
     - MGJRouter
     - MJRefresh
+    - PayCardsRecognizer
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -76,6 +79,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MGJRouter: f65821e2aeffc8f9e84b254c8f1c0dd80f048aa9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PayCardsRecognizer: b939eec21c6890d57c9f22cb8856517922b097a2
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
@@ -89,6 +93,6 @@ SPEC CHECKSUMS:
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 74a4955f404acf5abff9be66b962093eb70260c3
+PODFILE CHECKSUM: 056cda83288c31b52b563504c654be5fd79be88d
 
 COCOAPODS: 1.6.1

@@ -116,6 +116,11 @@
 		7770559B22BC83B900AACC7C /* YLGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559A22BC83B900AACC7C /* YLGradientLabel.m */; };
 		7770559E22BC89C600AACC7C /* YLGradViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7770559D22BC89C600AACC7C /* YLGradViewController.m */; };
 		777055A222BCB9C200AACC7C /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777055A122BCB9C200AACC7C /* YYTextViewController.m */; };
+		77ADF5A322DF1C9C002F12C5 /* YLLabelMarginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5A222DF1C9C002F12C5 /* YLLabelMarginViewController.m */; };
+		77ADF5A622DF273E002F12C5 /* YLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5A522DF273E002F12C5 /* YLLabel.m */; };
+		77ADF5AD22E04072002F12C5 /* PayCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5AC22E04072002F12C5 /* PayCardViewController.m */; };
+		77ADF5B122E04628002F12C5 /* YLDottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5B022E04628002F12C5 /* YLDottedLine.m */; };
+		77ADF5B422E0463B002F12C5 /* YLDottedLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5B322E0463B002F12C5 /* YLDottedLineViewController.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -383,6 +388,16 @@
 		7770559D22BC89C600AACC7C /* YLGradViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGradViewController.m; sourceTree = "<group>"; };
 		777055A022BCB9C200AACC7C /* YYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextViewController.h; sourceTree = "<group>"; };
 		777055A122BCB9C200AACC7C /* YYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextViewController.m; sourceTree = "<group>"; };
+		77ADF5A122DF1C9C002F12C5 /* YLLabelMarginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLabelMarginViewController.h; sourceTree = "<group>"; };
+		77ADF5A222DF1C9C002F12C5 /* YLLabelMarginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLabelMarginViewController.m; sourceTree = "<group>"; };
+		77ADF5A422DF273E002F12C5 /* YLLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLabel.h; sourceTree = "<group>"; };
+		77ADF5A522DF273E002F12C5 /* YLLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLabel.m; sourceTree = "<group>"; };
+		77ADF5AB22E04072002F12C5 /* PayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayCardViewController.h; sourceTree = "<group>"; };
+		77ADF5AC22E04072002F12C5 /* PayCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayCardViewController.m; sourceTree = "<group>"; };
+		77ADF5AF22E04628002F12C5 /* YLDottedLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDottedLine.h; sourceTree = "<group>"; };
+		77ADF5B022E04628002F12C5 /* YLDottedLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDottedLine.m; sourceTree = "<group>"; };
+		77ADF5B222E0463B002F12C5 /* YLDottedLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDottedLineViewController.h; sourceTree = "<group>"; };
+		77ADF5B322E0463B002F12C5 /* YLDottedLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDottedLineViewController.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -526,6 +541,8 @@
 				271F2A7D2239FB2800A3580F /* ViewController.m */,
 				7742805122C5AC1500B35262 /* GuideViewController.h */,
 				7742805222C5AC1500B35262 /* GuideViewController.m */,
+				77ADF5AE22E045B5002F12C5 /* 虚线 */,
+				77ADF5AA22E04065002F12C5 /* Paycard */,
 				7742804F22C5AA6A00B35262 /* Other */,
 				771992F622C306CD00227997 /* YLMoment */,
 				7770559F22BCB9AC00AACC7C /* YYTextDemo */,
@@ -787,6 +804,10 @@
 			children = (
 				7715DFA1228026C1000D58AF /* YLAdCountHelper.h */,
 				7715DFA2228026C1000D58AF /* YLAdCountHelper.m */,
+				77ADF5A122DF1C9C002F12C5 /* YLLabelMarginViewController.h */,
+				77ADF5A222DF1C9C002F12C5 /* YLLabelMarginViewController.m */,
+				77ADF5A422DF273E002F12C5 /* YLLabel.h */,
+				77ADF5A522DF273E002F12C5 /* YLLabel.m */,
 				7737699322814F38008DE8C1 /* AttributeStrView.h */,
 				7737699422814F38008DE8C1 /* AttributeStrView.m */,
 				7715DFA422811E3A000D58AF /* EmptyView.h */,
@@ -900,6 +921,26 @@
 			path = YYTextDemo;
 			sourceTree = "<group>";
 		};
+		77ADF5AA22E04065002F12C5 /* Paycard */ = {
+			isa = PBXGroup;
+			children = (
+				77ADF5AB22E04072002F12C5 /* PayCardViewController.h */,
+				77ADF5AC22E04072002F12C5 /* PayCardViewController.m */,
+			);
+			path = Paycard;
+			sourceTree = "<group>";
+		};
+		77ADF5AE22E045B5002F12C5 /* 虚线 */ = {
+			isa = PBXGroup;
+			children = (
+				77ADF5AF22E04628002F12C5 /* YLDottedLine.h */,
+				77ADF5B022E04628002F12C5 /* YLDottedLine.m */,
+				77ADF5B222E0463B002F12C5 /* YLDottedLineViewController.h */,
+				77ADF5B322E0463B002F12C5 /* YLDottedLineViewController.m */,
+			);
+			path = "虚线";
+			sourceTree = "<group>";
+		};
 		77BFB9D3228A592900B48949 /* PopoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,6 +1000,7 @@
 				271F2A732239FB2800A3580F /* Frameworks */,
 				271F2A742239FB2800A3580F /* Resources */,
 				DD169C868282F2212EB5C642 /* [CP] Copy Pods Resources */,
+				7AD75343555710CE64DEF8A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1105,6 +1147,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7AD75343555710CE64DEF8A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestOCProject/Pods-TestOCProject-frameworks.sh",
+				"${PODS_ROOT}/PayCardsRecognizer/Source/PayCardsRecognizer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PayCardsRecognizer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestOCProject/Pods-TestOCProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD169C868282F2212EB5C642 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1154,6 +1218,7 @@
 				77026BBB22A0D0200065D7A1 /* YLShapeView.m in Sources */,
 				A5702828225F123C00758F77 /* NSString+Percent.m in Sources */,
 				A5F7FCDD225C3A7E00D763F7 /* APNSManager.m in Sources */,
+				77ADF5B122E04628002F12C5 /* YLDottedLine.m in Sources */,
 				77D0E68822CF3909006A51F0 /* YLLoopExp.m in Sources */,
 				77D0E68222CF2862006A51F0 /* YLPreWarningLoopView.m in Sources */,
 				775F5426226F1C3B00CFEE8A /* Tclass.m in Sources */,
@@ -1190,9 +1255,11 @@
 				7742804122C4C3C600B35262 /* YLMomentVideo.m in Sources */,
 				A570281E225DE59700758F77 /* XibViewController.m in Sources */,
 				7769358022C61E2500B19703 /* YLIMManager.m in Sources */,
+				77ADF5A322DF1C9C002F12C5 /* YLLabelMarginViewController.m in Sources */,
 				A5BF097C225C5F9900C02A81 /* YLStaticViewController.m in Sources */,
 				77C6BC87227596F7007AE802 /* EatViewController.m in Sources */,
 				77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */,
+				77ADF5AD22E04072002F12C5 /* PayCardViewController.m in Sources */,
 				A5BF097F225C690100C02A81 /* YLSettingTableViewCell.m in Sources */,
 				27A344EF2254A24600C0EFC7 /* RACViewModel.m in Sources */,
 				7768C7B122A78C1F000CE543 /* YLIMMessageRedPacketView.m in Sources */,
@@ -1228,6 +1295,7 @@
 				27212E4A223F6E2100CA6E4C /* UITableViewCell+reuse.m in Sources */,
 				776FE8F122A8A96F0061DC11 /* YLIMToolBar.m in Sources */,
 				776FE8F722A8BBAA0061DC11 /* YLIMKeyborad.m in Sources */,
+				77ADF5A622DF273E002F12C5 /* YLLabel.m in Sources */,
 				27D7A6792247A3BC009F69CF /* NextViewController.m in Sources */,
 				773F0D8E2264557700815D58 /* YLCustomDrawView.m in Sources */,
 				774EE3AE228ABA3200ABFA7F /* YLCoinProgressView.m in Sources */,
@@ -1246,6 +1314,7 @@
 				77BFB9E2228A61E900B48949 /* ButtonTypeViewController.m in Sources */,
 				77026BA8229E6CA60065D7A1 /* YLCView.m in Sources */,
 				7742803B22C4670C00B35262 /* YLMomentLayout.m in Sources */,
+				77ADF5B422E0463B002F12C5 /* YLDottedLineViewController.m in Sources */,
 				77026BC122A508500065D7A1 /* YLCollectionViewController.m in Sources */,
 				771992FC22C3071800227997 /* YLMomentViewController.m in Sources */,
 				77C9D8912284238E0022991E /* FakeScrollViewController.m in Sources */,

@@ -23,6 +23,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    [self addCell:@"虚线" class:@"YLDottedLineViewController"];
+    [self addCell:@"payCard" class:@"PayCardViewController"];
     [self addCell:@"竖直跑马灯" class:@"YLVerticalLoopVC"];
     [self addCell:@"math" class:@"MathViewController"];
     [self addCell:@"IM" class:@"YLSessionViewController"];
@@ -44,6 +46,7 @@
     [self addCell:@"drawWithXIb" class:@"YLDrawXibViewController"];
     [self addCell:@"AS_OC" class:@"AsyncViewController"];
     [self addCell:@"按钮位置" class:@"ButtonTypeViewController"];
+    [self addCell:@"label内边距" class:@"YLLabelMarginViewController"];
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {

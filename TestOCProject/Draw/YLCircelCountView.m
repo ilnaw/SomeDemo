@@ -84,7 +84,7 @@
     self.percent = sender.timestamp - self.beginTime;
     
     NSInteger count = self.countDown - floor(sender.timestamp - self.beginTime);
-    self.countDownLabel.text = [NSString stringWithFormat:@"%ld",count];
+    self.countDownLabel.text = [NSString stringWithFormat:@"%ld",(long)count];
     
     if (self.percent >= self.countDown) {
         [self.timer invalidate];
