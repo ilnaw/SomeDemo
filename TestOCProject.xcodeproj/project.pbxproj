@@ -62,6 +62,8 @@
 		7715DFA022802086000D58AF /* NSMutableArray+Queue_Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7715DF9F22802086000D58AF /* NSMutableArray+Queue_Stack.m */; };
 		7715DFA3228026C1000D58AF /* YLAdCountHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7715DFA2228026C1000D58AF /* YLAdCountHelper.m */; };
 		7715DFA622811E3B000D58AF /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7715DFA522811E3B000D58AF /* EmptyView.m */; };
+		7718C10522E9837000F39EB5 /* YLFullScreenCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7718C10422E9837000F39EB5 /* YLFullScreenCellViewController.m */; };
+		7718C10822E9868900F39EB5 /* YLCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7718C10722E9868900F39EB5 /* YLCellViewController.m */; };
 		771992F922C3070800227997 /* YLMomentHeaderReuseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 771992F822C3070800227997 /* YLMomentHeaderReuseTestVC.m */; };
 		771992FC22C3071800227997 /* YLMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771992FB22C3071800227997 /* YLMomentViewController.m */; };
 		771992FF22C3073100227997 /* YLMomentMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771992FE22C3073100227997 /* YLMomentMoreView.m */; };
@@ -70,6 +72,7 @@
 		7737699522814F38008DE8C1 /* AttributeStrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699422814F38008DE8C1 /* AttributeStrView.m */; };
 		7737699B22816067008DE8C1 /* YLWeekDestinyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699A22816067008DE8C1 /* YLWeekDestinyView.m */; };
 		7737699E228162B6008DE8C1 /* YLCircelCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699D228162B6008DE8C1 /* YLCircelCountView.m */; };
+		7738923322E18F8300853A6D /* YLCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738923222E18F8300853A6D /* YLCountDownButton.m */; };
 		773F0D882264298100815D58 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D872264298100815D58 /* DrawViewController.m */; };
 		773F0D8B22642CBA00815D58 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D8A22642CBA00815D58 /* DrawView.m */; };
 		773F0D8E2264557700815D58 /* YLCustomDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773F0D8D2264557700815D58 /* YLCustomDrawView.m */; };
@@ -121,6 +124,7 @@
 		77ADF5AD22E04072002F12C5 /* PayCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5AC22E04072002F12C5 /* PayCardViewController.m */; };
 		77ADF5B122E04628002F12C5 /* YLDottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5B022E04628002F12C5 /* YLDottedLine.m */; };
 		77ADF5B422E0463B002F12C5 /* YLDottedLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5B322E0463B002F12C5 /* YLDottedLineViewController.m */; };
+		77ADF5B922E0664D002F12C5 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADF5B822E0664D002F12C5 /* StackViewController.m */; };
 		77BFB9DA228A592900B48949 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D5228A592900B48949 /* PopoverAction.m */; };
 		77BFB9DB228A592900B48949 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D7228A592900B48949 /* PopoverView.m */; };
 		77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFB9D9228A592900B48949 /* PopoverViewCell.m */; };
@@ -283,6 +287,10 @@
 		7715DFA2228026C1000D58AF /* YLAdCountHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAdCountHelper.m; sourceTree = "<group>"; wrapsLines = 0; };
 		7715DFA422811E3A000D58AF /* EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		7715DFA522811E3B000D58AF /* EmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
+		7718C10322E9837000F39EB5 /* YLFullScreenCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFullScreenCellViewController.h; sourceTree = "<group>"; };
+		7718C10422E9837000F39EB5 /* YLFullScreenCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLFullScreenCellViewController.m; sourceTree = "<group>"; };
+		7718C10622E9868900F39EB5 /* YLCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCellViewController.h; sourceTree = "<group>"; };
+		7718C10722E9868900F39EB5 /* YLCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCellViewController.m; sourceTree = "<group>"; };
 		771992F722C3070800227997 /* YLMomentHeaderReuseTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMomentHeaderReuseTestVC.h; sourceTree = "<group>"; };
 		771992F822C3070800227997 /* YLMomentHeaderReuseTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMomentHeaderReuseTestVC.m; sourceTree = "<group>"; };
 		771992FA22C3071800227997 /* YLMomentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMomentViewController.h; sourceTree = "<group>"; };
@@ -299,6 +307,9 @@
 		7737699A22816067008DE8C1 /* YLWeekDestinyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWeekDestinyView.m; sourceTree = "<group>"; };
 		7737699C228162B6008DE8C1 /* YLCircelCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCircelCountView.h; sourceTree = "<group>"; };
 		7737699D228162B6008DE8C1 /* YLCircelCountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCircelCountView.m; sourceTree = "<group>"; };
+		7738923122E18F8300853A6D /* YLCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCountDownButton.h; sourceTree = "<group>"; };
+		7738923222E18F8300853A6D /* YLCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCountDownButton.m; sourceTree = "<group>"; };
+		7738923422E1C5FD00853A6D /* TestOCProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestOCProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		773F0D862264298100815D58 /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		773F0D872264298100815D58 /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		773F0D8922642CBA00815D58 /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
@@ -398,6 +409,8 @@
 		77ADF5B022E04628002F12C5 /* YLDottedLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDottedLine.m; sourceTree = "<group>"; };
 		77ADF5B222E0463B002F12C5 /* YLDottedLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDottedLineViewController.h; sourceTree = "<group>"; };
 		77ADF5B322E0463B002F12C5 /* YLDottedLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDottedLineViewController.m; sourceTree = "<group>"; };
+		77ADF5B722E0664D002F12C5 /* StackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		77ADF5B822E0664D002F12C5 /* StackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 		77BFB9D4228A592900B48949 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
 		77BFB9D5228A592900B48949 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		77BFB9D6228A592900B48949 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
@@ -541,6 +554,8 @@
 				271F2A7D2239FB2800A3580F /* ViewController.m */,
 				7742805122C5AC1500B35262 /* GuideViewController.h */,
 				7742805222C5AC1500B35262 /* GuideViewController.m */,
+				7718C10022E9831800F39EB5 /* FullScreenTableTest */,
+				77ADF5B622E06632002F12C5 /* StackView */,
 				77ADF5AE22E045B5002F12C5 /* 虚线 */,
 				77ADF5AA22E04065002F12C5 /* Paycard */,
 				7742804F22C5AA6A00B35262 /* Other */,
@@ -700,6 +715,17 @@
 				776FE8F022A8A96F0061DC11 /* YLIMToolBar.m */,
 			);
 			path = YLIM;
+			sourceTree = "<group>";
+		};
+		7718C10022E9831800F39EB5 /* FullScreenTableTest */ = {
+			isa = PBXGroup;
+			children = (
+				7718C10322E9837000F39EB5 /* YLFullScreenCellViewController.h */,
+				7718C10422E9837000F39EB5 /* YLFullScreenCellViewController.m */,
+				7718C10622E9868900F39EB5 /* YLCellViewController.h */,
+				7718C10722E9868900F39EB5 /* YLCellViewController.m */,
+			);
+			path = FullScreenTableTest;
 			sourceTree = "<group>";
 		};
 		771992F622C306CD00227997 /* YLMoment */ = {
@@ -941,6 +967,18 @@
 			path = "虚线";
 			sourceTree = "<group>";
 		};
+		77ADF5B622E06632002F12C5 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				77ADF5B722E0664D002F12C5 /* StackViewController.h */,
+				77ADF5B822E0664D002F12C5 /* StackViewController.m */,
+				7738923122E18F8300853A6D /* YLCountDownButton.h */,
+				7738923222E18F8300853A6D /* YLCountDownButton.m */,
+				7738923422E1C5FD00853A6D /* TestOCProject-Bridging-Header.h */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		77BFB9D3228A592900B48949 /* PopoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1096,7 @@
 				TargetAttributes = {
 					271F2A752239FB2800A3580F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1000;
 					};
 					271F2A8D2239FB2A00A3580F = {
 						CreatedOnToolsVersion = 10.1;
@@ -1249,7 +1288,9 @@
 				7742804A22C4CF0000B35262 /* YLMomentFooterView.m in Sources */,
 				773F0D882264298100815D58 /* DrawViewController.m in Sources */,
 				A5F7FCE3225C47E800D763F7 /* YLExampleViewController.m in Sources */,
+				77ADF5B922E0664D002F12C5 /* StackViewController.m in Sources */,
 				7770559E22BC89C600AACC7C /* YLGradViewController.m in Sources */,
+				7738923322E18F8300853A6D /* YLCountDownButton.m in Sources */,
 				7715DFA622811E3B000D58AF /* EmptyView.m in Sources */,
 				271883222249C3CF00046D86 /* BottomViewController.m in Sources */,
 				7742804122C4C3C600B35262 /* YLMomentVideo.m in Sources */,
@@ -1273,6 +1314,7 @@
 				A5BF0982225C75FC00C02A81 /* YLMasonryViewController.m in Sources */,
 				2715F30D2248B89200164D88 /* PGThreeViewController.m in Sources */,
 				773F0D912264764600815D58 /* YLCustomBottomLineView.m in Sources */,
+				7718C10822E9868900F39EB5 /* YLCellViewController.m in Sources */,
 				77026B9C229E62A30065D7A1 /* YLBaseView.m in Sources */,
 				77026BC422A50D570065D7A1 /* YLHorizontalPageLayout.m in Sources */,
 				771992F922C3070800227997 /* YLMomentHeaderReuseTestVC.m in Sources */,
@@ -1322,6 +1364,7 @@
 				77026BCE22A6212A0065D7A1 /* YLIMMessageModel.m in Sources */,
 				77D0E67C22CEEB3A006A51F0 /* YLVerticalLoopView.m in Sources */,
 				A5F7FCE0225C3D0B00D763F7 /* YLNotificationType.m in Sources */,
+				7718C10522E9837000F39EB5 /* YLFullScreenCellViewController.m in Sources */,
 				2715F30A2248B88900164D88 /* PGTwoViewController.m in Sources */,
 				777055A222BCB9C200AACC7C /* YYTextViewController.m in Sources */,
 				7768C7A522A760D8000CE543 /* YLIMConfig.m in Sources */,
@@ -1504,6 +1547,7 @@
 			baseConfigurationReference = 664DD564821815C81E9C7AA4 /* Pods-TestOCProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65XUT4T932;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestOCProject/PrefixHeader.pch";
@@ -1515,6 +1559,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wanli.TestOCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestOCProject/StackView/TestOCProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1524,6 +1571,7 @@
 			baseConfigurationReference = 358792513C0D5C23CF86F477 /* Pods-TestOCProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65XUT4T932;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestOCProject/PrefixHeader.pch";
@@ -1535,6 +1583,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wanli.TestOCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestOCProject/StackView/TestOCProject-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

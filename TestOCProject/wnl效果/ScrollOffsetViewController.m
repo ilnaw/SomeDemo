@@ -87,4 +87,5 @@
     _indicator.centerX = originCenterX + offsetX / screenWidth * 100 ;
    
 }
+
 @end

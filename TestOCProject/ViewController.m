@@ -160,7 +160,7 @@
 
 @end
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,TZImagePickerControllerDelegate>
 @property (strong, nonatomic)UITableView  *tableView;
 @property (assign, nonatomic)CGFloat    tableViewHeight;
 @property (strong, nonatomic)UIScrollView *scrollView;
@@ -279,25 +279,30 @@
 //    [controller addAction:shareAction];
 //    [controller addAction:deleteAction];
 //    [controller showToView:sender];
-    TZImagePickerController *picker = [[TZImagePickerController alloc]initWithMaxImagesCount:9 delegate:nil];
+    TZImagePickerController *picker = [[TZImagePickerController alloc]initWithMaxImagesCount:9 delegate:self];
     picker.iconThemeColor = [UIColor redColor];
     picker.naviBgColor = [UIColor redColor];
     picker.naviTitleColor = [UIColor whiteColor];
     picker.oKButtonTitleColorNormal = [UIColor redColor];
     picker.oKButtonTitleColorDisabled = [UIColor lightGrayColor];
     picker.allowPickingVideo = NO;
+    picker.allowPickingGif = YES;
+    picker.allowPickingMultipleVideo = YES;
     picker.sortAscendingByModificationDate = NO;
-    picker.allowPickingOriginalPhoto = NO;
     picker.assetCellDidSetModelBlock = ^(TZAssetCell *cell, UIImageView *imageView, UIImageView *selectImageView, UILabel *indexLabel, UIView *bottomView, UILabel *timeLength, UIImageView *videoImgView) {
         cell.photoDefImage = [UIImage imageNamed:@"tx-yytg-tips-icon"];
         cell.photoSelImage = [UIImage imageNamed:@"jiankys14_icon"];
-        selectImageView.image = [UIImage imageNamed:@"tx-yytg-tips-icon"];
+        selectImageView.image = cell.selectPhotoButton.selected ? [UIImage imageNamed:@"jiankys14_icon"] : [UIImage imageNamed:@"tx-yytg-tips-icon"];
     };
     picker.photoPreviewPageUIConfigBlock = ^(UICollectionView *collectionView, UIView *naviBar, UIButton *backButton, UIButton *selectButton, UILabel *indexLabel, UIView *toolBar, UIButton *originalPhotoButton, UILabel *originalPhotoLabel, UIButton *doneButton, UIImageView *numberImageView, UILabel *numberLabel) {
         [selectButton setImage:[UIImage imageNamed:@"tx-yytg-tips-icon"] forState:UIControlStateNormal];
         [selectButton setImage:[UIImage imageNamed:@"jiankys14_icon"] forState:UIControlStateSelected];
     };
     [self presentViewController:picker animated:YES completion:nil];
+}
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto
+{
+    NSLog(@"------%ld",photos.count);
 }
 
 - (UIImage *)snapScrollViewContent

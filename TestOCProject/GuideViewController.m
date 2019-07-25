@@ -23,6 +23,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    [self addCell:@"全屏cell测试cellforRow" class:@"YLFullScreenCellViewController"];
+    [self addCell:@"stack" class:@"StackViewController"];
     [self addCell:@"虚线" class:@"YLDottedLineViewController"];
     [self addCell:@"payCard" class:@"PayCardViewController"];
     [self addCell:@"竖直跑马灯" class:@"YLVerticalLoopVC"];
@@ -47,6 +49,7 @@
     [self addCell:@"AS_OC" class:@"AsyncViewController"];
     [self addCell:@"按钮位置" class:@"ButtonTypeViewController"];
     [self addCell:@"label内边距" class:@"YLLabelMarginViewController"];
+    [self addCell:@"杂" class:@"ViewController"];
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {
