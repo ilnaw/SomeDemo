@@ -69,6 +69,8 @@
 		771992FF22C3073100227997 /* YLMomentMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771992FE22C3073100227997 /* YLMomentMoreView.m */; };
 		7719930222C3078600227997 /* YLBasicTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7719930122C3078600227997 /* YLBasicTableViewViewController.m */; };
 		7719930522C30E2F00227997 /* YLMomentCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7719930422C30E2F00227997 /* YLMomentCommentCell.m */; };
+		7728D36D22EEFE74004D923E /* YLCarouselCollectionLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7728D36C22EEFE74004D923E /* YLCarouselCollectionLayoutVC.m */; };
+		7728D37022EEFE97004D923E /* YLCarouseLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7728D36F22EEFE97004D923E /* YLCarouseLayout.m */; };
 		7737699522814F38008DE8C1 /* AttributeStrView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699422814F38008DE8C1 /* AttributeStrView.m */; };
 		7737699B22816067008DE8C1 /* YLWeekDestinyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699A22816067008DE8C1 /* YLWeekDestinyView.m */; };
 		7737699E228162B6008DE8C1 /* YLCircelCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7737699D228162B6008DE8C1 /* YLCircelCountView.m */; };
@@ -301,6 +303,10 @@
 		7719930122C3078600227997 /* YLBasicTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBasicTableViewViewController.m; sourceTree = "<group>"; };
 		7719930322C30E2F00227997 /* YLMomentCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMomentCommentCell.h; sourceTree = "<group>"; };
 		7719930422C30E2F00227997 /* YLMomentCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMomentCommentCell.m; sourceTree = "<group>"; };
+		7728D36B22EEFE74004D923E /* YLCarouselCollectionLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarouselCollectionLayoutVC.h; sourceTree = "<group>"; };
+		7728D36C22EEFE74004D923E /* YLCarouselCollectionLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarouselCollectionLayoutVC.m; sourceTree = "<group>"; };
+		7728D36E22EEFE96004D923E /* YLCarouseLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarouseLayout.h; sourceTree = "<group>"; };
+		7728D36F22EEFE97004D923E /* YLCarouseLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarouseLayout.m; sourceTree = "<group>"; };
 		7737699322814F38008DE8C1 /* AttributeStrView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeStrView.h; sourceTree = "<group>"; };
 		7737699422814F38008DE8C1 /* AttributeStrView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeStrView.m; sourceTree = "<group>"; };
 		7737699922816067008DE8C1 /* YLWeekDestinyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWeekDestinyView.h; sourceTree = "<group>"; };
@@ -554,6 +560,7 @@
 				271F2A7D2239FB2800A3580F /* ViewController.m */,
 				7742805122C5AC1500B35262 /* GuideViewController.h */,
 				7742805222C5AC1500B35262 /* GuideViewController.m */,
+				7728D36A22EEFE57004D923E /* CarouselCollectionLayout */,
 				7718C10022E9831800F39EB5 /* FullScreenTableTest */,
 				77ADF5B622E06632002F12C5 /* StackView */,
 				77ADF5AE22E045B5002F12C5 /* 虚线 */,
@@ -741,6 +748,17 @@
 				7742802B22C4643D00B35262 /* View */,
 			);
 			path = YLMoment;
+			sourceTree = "<group>";
+		};
+		7728D36A22EEFE57004D923E /* CarouselCollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7728D36B22EEFE74004D923E /* YLCarouselCollectionLayoutVC.h */,
+				7728D36C22EEFE74004D923E /* YLCarouselCollectionLayoutVC.m */,
+				7728D36E22EEFE96004D923E /* YLCarouseLayout.h */,
+				7728D36F22EEFE97004D923E /* YLCarouseLayout.m */,
+			);
+			path = CarouselCollectionLayout;
 			sourceTree = "<group>";
 		};
 		7742802B22C4643D00B35262 /* View */ = {
@@ -1300,6 +1318,7 @@
 				A5BF097C225C5F9900C02A81 /* YLStaticViewController.m in Sources */,
 				77C6BC87227596F7007AE802 /* EatViewController.m in Sources */,
 				77BFB9DC228A592900B48949 /* PopoverViewCell.m in Sources */,
+				7728D37022EEFE97004D923E /* YLCarouseLayout.m in Sources */,
 				77ADF5AD22E04072002F12C5 /* PayCardViewController.m in Sources */,
 				A5BF097F225C690100C02A81 /* YLSettingTableViewCell.m in Sources */,
 				27A344EF2254A24600C0EFC7 /* RACViewModel.m in Sources */,
@@ -1310,6 +1329,7 @@
 				27A344EC2254A23100C0EFC7 /* RACViewController.m in Sources */,
 				7715DFA022802086000D58AF /* NSMutableArray+Queue_Stack.m in Sources */,
 				7768C7AE22A76AA7000CE543 /* YLIMMessageAnswerView.m in Sources */,
+				7728D36D22EEFE74004D923E /* YLCarouselCollectionLayoutVC.m in Sources */,
 				7768C7AB22A76A92000CE543 /* YLIMMessageImageView.m in Sources */,
 				A5BF0982225C75FC00C02A81 /* YLMasonryViewController.m in Sources */,
 				2715F30D2248B89200164D88 /* PGThreeViewController.m in Sources */,

@@ -61,7 +61,7 @@
         if (self.formatBlock) {
             [self setTitle:self.formatBlock(count) forState:UIControlStateNormal];
         }else{
-            [self setTitle:[NSString stringWithFormat:@"%lds",count] forState:UIControlStateNormal];
+            [self setTitle:[NSString stringWithFormat:@"%lds",(long)count] forState:UIControlStateNormal];
         }
     }else{
         self.counting = NO;

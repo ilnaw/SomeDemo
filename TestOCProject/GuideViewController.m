@@ -23,6 +23,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    [self addCell:@"卡片collection" class:@"YLCarouselCollectionLayoutVC"];
     [self addCell:@"全屏cell测试cellforRow" class:@"YLFullScreenCellViewController"];
     [self addCell:@"stack" class:@"StackViewController"];
     [self addCell:@"虚线" class:@"YLDottedLineViewController"];
