@@ -41,6 +41,8 @@
             make.center.equalTo(self);
         }];
         _countDownLabel = label;
+        
+
     }
     return self;
 }
@@ -53,12 +55,38 @@
     CGFloat radius = (x > y ? y : x) - 10;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, 5);
+    CGContextSetLineWidth(context, 6);
+    //gray
+    CGContextSetStrokeColorWithColor(context, UIColor.grayColor.CGColor);
+    CGContextAddArc(context, x, y, radius, 0, 2*M_PI, 0);
+    CGContextStrokePath(context);
+    
     //red
     CGContextSetRGBStrokeColor(context, 1, 0, 0, 1);
     CGContextAddArc(context, x, y, radius, 0, self.percent/self.countDown * 2 * M_PI, 0);
     
     CGContextStrokePath(context);
+}
+
+
+//使用shaperlayer 这种背景和进度最好都用shaperlayer。不断改变shaperlayer的strokenEnd
+- (void)layoutSubviews{
+    //draw backgroud
+    CGRect frame = self.frame;
+    CGFloat x = frame.size.width/2.0;
+    CGFloat y = frame.size.height/2.0;
+    CGFloat radius = (x > y ? y : x) - 10;
+    
+    UIBezierPath *path = [UIBezierPath new];
+    [path addArcWithCenter:CGPointMake(x,y) radius:radius startAngle:0 endAngle:2*M_PI clockwise:0];
+    
+    CAShapeLayer *bottomLayer = [CAShapeLayer new];
+    bottomLayer.path = path.CGPath;
+    bottomLayer.strokeColor = UIColor.grayColor.CGColor;
+    bottomLayer.lineWidth = 5;
+    bottomLayer.strokeEnd = 0.8;
+    
+    [self.layer insertSublayer:bottomLayer atIndex:0];
 }
 
 
